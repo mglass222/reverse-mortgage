@@ -4,9 +4,9 @@ import { LanguageProvider } from '../../i18n/LanguageContext.jsx'
 import diagrams from './index.js'
 
 describe('diagram registry', () => {
-  it('registers all five diagram keys', () => {
+  it('registers all diagram keys', () => {
     expect(Object.keys(diagrams).sort()).toEqual(
-      ['balanceDirection', 'balanceGrowth', 'disbursementOptions', 'nonRecourse', 'processFlow'].sort(),
+      ['balanceDirection', 'balanceGrowth', 'disbursementOptions', 'nonRecourse', 'principalLimit', 'processFlow'].sort(),
     )
   })
 

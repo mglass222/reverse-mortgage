@@ -8,7 +8,6 @@ export default {
   sections: [
     {
       heading: { en: 'PLF as a duration-and-discount construct', ko: '기간·할인 구조로서의 PLF' },
-      diagram: 'balanceGrowth',
       body: [
         {
           en: 'Principal Limit = Maximum Claim Amount × PLF. The PLF (0–1) rises with age and falls as the expected rate rises — exactly what present-value intuition predicts: a shorter expected duration (older borrower) and a lower discount rate (lower expected rate) both leave more room before the compounding balance is projected to overtake value. The FHA tables bake in mortality, MIP accrual, and a target ending LTV. Treat the PLF as the program’s risk-based LTV grid, not a black box.',
@@ -27,6 +26,7 @@ export default {
     },
     {
       heading: { en: 'From Principal Limit to net availability', ko: '원금한도에서 순가용액으로' },
+      diagram: 'principalLimit',
       body: [
         {
           en: 'The Principal Limit is gross. Net it down by mandatory obligations: any existing liens to be retired (the HECM must close in first position, so a payoff of the current mortgage is typically the largest), financed closing costs, up-front MIP, and any LESA set-aside. First-year draw limits also apply (generally 60% of the Principal Limit, or mandatory obligations plus 10%, whichever is greater). What remains is what the borrower can actually access — model it before you quote.',
