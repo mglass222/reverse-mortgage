@@ -1,6 +1,7 @@
 // HashRouter keeps client-side routing working on GitHub Pages (a project
 // subpath) without server rewrites or deep-link 404s.
-import { HashRouter, Routes, Route, Navigate, useParams } from 'react-router-dom'
+import { useEffect } from 'react'
+import { HashRouter, Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom'
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext.jsx'
 import ui from './i18n/ui-strings.js'
 import Sidebar from './components/Sidebar.jsx'
@@ -9,6 +10,16 @@ import DisclaimerBanner from './components/DisclaimerBanner.jsx'
 import ChapterLayout from './components/ChapterLayout.jsx'
 import Calculator from './calculator/Calculator.jsx'
 import chapters from './content/chapters-index.js'
+
+// Reset scroll to the top whenever the route changes (HashRouter keeps the
+// previous scroll position otherwise).
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 function Header() {
   const { pick } = useLanguage()
@@ -38,6 +49,7 @@ export default function App() {
   return (
     <LanguageProvider>
       <HashRouter>
+        <ScrollToTop />
         <DisclaimerBanner />
         <Header />
         <div className="app-body">

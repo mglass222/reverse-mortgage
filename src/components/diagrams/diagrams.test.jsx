@@ -6,7 +6,18 @@ import diagrams from './index.js'
 describe('diagram registry', () => {
   it('registers all diagram keys', () => {
     expect(Object.keys(diagrams).sort()).toEqual(
-      ['balanceDirection', 'balanceGrowth', 'disbursementOptions', 'nonRecourse', 'principalLimit', 'processFlow'].sort(),
+      [
+        'balanceDirection',
+        'balanceGrowth',
+        'disbursementOptions',
+        'maturityPaths',
+        'nonRecourse',
+        'principalLimit',
+        'processFlow',
+        'programFlow',
+        'rateStack',
+        'suitability',
+      ].sort(),
     )
   })
 

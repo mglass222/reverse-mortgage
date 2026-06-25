@@ -8,10 +8,11 @@ export default {
   sections: [
     {
       heading: { en: 'Insurance and secondary-market execution', ko: '보험과 2차 시장 실행' },
+      diagram: 'programFlow',
       body: [
         {
-          en: 'HECMs are insured out of the Mutual Mortgage Insurance Fund, funded by borrower-paid MIP. The FHA insurance runs to both sides: it caps borrower/heir liability at value, and it covers lender shortfalls subject to FHA rules. Servicers may assign the loan to HUD once the balance reaches 98% of the Maximum Claim Amount, transferring tail risk to FHA. Most originations are pooled into Ginnie Mae HMBS, so your familiar Ginnie execution and the OAS on those pools drive the margins that ultimately set borrower pricing.',
-          ko: 'HECM은 차주가 납부하는 MIP로 조성되는 상호모기지보험기금(MMI Fund)에서 보험이 지급됩니다. FHA 보험은 양쪽 모두에 적용됩니다. 차주·상속인의 책임을 가치 한도로 제한하고, FHA 규정에 따라 대출기관의 부족분을 보전합니다. 서비서는 잔액이 최대 청구 금액(MCA)의 98%에 도달하면 대출을 HUD에 양도하여 후순위 위험을 FHA로 이전할 수 있습니다. 대부분의 신규 대출은 지니메 HMBS로 풀링되므로, 익숙한 지니메 실행과 해당 풀의 OAS가 결국 차주 가격을 정하는 마진을 좌우합니다.',
+          en: 'HECMs are insured out of the Mutual Mortgage Insurance Fund, funded by borrower-paid MIP. The FHA insurance runs to both sides: it caps borrower/heir liability at value, and it covers lender shortfalls subject to FHA rules. Servicers may assign the loan to HUD once the balance reaches 98% of the Maximum Claim Amount, transferring tail risk to FHA. Most originations are pooled into [Ginnie Mae HMBS](https://www.ginniemae.gov/), so your familiar Ginnie execution and the OAS on those pools drive the margins that ultimately set borrower pricing.',
+          ko: 'HECM은 차주가 납부하는 MIP로 조성되는 상호모기지보험기금(MMI Fund)에서 보험이 지급됩니다. FHA 보험은 양쪽 모두에 적용됩니다. 차주·상속인의 책임을 가치 한도로 제한하고, FHA 규정에 따라 대출기관의 부족분을 보전합니다. 서비서는 잔액이 최대 청구 금액(MCA)의 98%에 도달하면 대출을 HUD에 양도하여 후순위 위험을 FHA로 이전할 수 있습니다. 대부분의 신규 대출은 [지니메 HMBS](https://www.ginniemae.gov/)로 풀링되므로, 익숙한 지니메 실행과 해당 풀의 OAS가 결국 차주 가격을 정하는 마진을 좌우합니다.',
         },
       ],
     },

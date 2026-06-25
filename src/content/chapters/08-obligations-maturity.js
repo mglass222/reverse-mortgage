@@ -17,6 +17,7 @@ export default {
     },
     {
       heading: { en: 'Maturity and due-and-payable events', ko: '만기 및 상환 의무 발생 사유' },
+      diagram: 'maturityPaths',
       body: [
         {
           en: 'The loan becomes due and payable on a maturity event: death of the last surviving borrower, sale or transfer of title, or the property ceasing to be the principal residence for more than 12 consecutive months (including extended care). Property-charge or occupancy breaches create a default-based due-and-payable status, subject to HUD loss-mitigation and notice requirements before any acceleration. An eligible non-borrowing spouse can defer the death trigger under the deferral period rules if conditions are met.',
@@ -28,8 +29,8 @@ export default {
       heading: { en: 'Resolution and the 95% rule', ko: '해결과 95% 규칙' },
       body: [
         {
-          en: 'At maturity the estate typically sells and retires the balance, with any surplus flowing to the heirs — the non-recourse cap means there is never a deficiency to chase. Heirs who want to retain the property pay the lesser of the full balance or 95% of current appraised value, or refinance into a forward loan. HUD timelines govern: roughly six months to resolve with possible extensions. This is where you, as the forward/CRE banker in the family’s orbit, often re-enter — structuring the heirs’ takeout.',
-          ko: '만기 시 상속재산은 보통 매각하여 잔액을 상환하고 잉여는 상속인에게 귀속됩니다. 비소구 한도 때문에 추징할 부족분은 결코 없습니다. 부동산을 보유하려는 상속인은 전체 잔액과 현재 감정가의 95% 중 낮은 금액을 지불하거나 정방향 대출로 재융자합니다. HUD 기한이 적용됩니다. 대략 6개월 이내 해결, 연장 가능성이 있습니다. 바로 이 지점에서 가족의 궤도에 있는 정방향·CRE 뱅커인 귀하가 상속인의 차환을 구조화하며 다시 등장하는 경우가 많습니다.',
+          en: 'At maturity the estate typically sells and retires the balance, with any surplus flowing to the heirs — the non-recourse cap means there is never a deficiency to chase. Heirs who want to retain the property pay the lesser of the full balance or [95% of current appraised value](https://www.consumerfinance.gov/ask-cfpb/with-a-reverse-mortgage-loan-can-my-heirs-keep-or-sell-my-home-after-i-die-en-242/), or refinance into a forward loan. HUD timelines govern: roughly six months to resolve with possible extensions. This is where you, as the forward/CRE banker in the family’s orbit, often re-enter — structuring the heirs’ takeout.',
+          ko: '만기 시 상속재산은 보통 매각하여 잔액을 상환하고 잉여는 상속인에게 귀속됩니다. 비소구 한도 때문에 추징할 부족분은 결코 없습니다. 부동산을 보유하려는 상속인은 전체 잔액과 [현재 감정가의 95%](https://www.consumerfinance.gov/ask-cfpb/with-a-reverse-mortgage-loan-can-my-heirs-keep-or-sell-my-home-after-i-die-en-242/) 중 낮은 금액을 지불하거나 정방향 대출로 재융자합니다. HUD 기한이 적용됩니다. 대략 6개월 이내 해결, 연장 가능성이 있습니다. 바로 이 지점에서 가족의 궤도에 있는 정방향·CRE 뱅커인 귀하가 상속인의 차환을 구조화하며 다시 등장하는 경우가 많습니다.',
         },
       ],
     },

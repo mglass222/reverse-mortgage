@@ -9,6 +9,7 @@ import obligationsMaturity from './chapters/08-obligations-maturity.js'
 import originationProcess from './chapters/09-origination-process.js'
 import risksSuitability from './chapters/10-risks-suitability.js'
 import glossary from './chapters/11-glossary.js'
+import references from './chapters/12-references.js'
 
 const chapters = [
   introduction,
@@ -22,5 +23,6 @@ const chapters = [
   originationProcess,
   risksSuitability,
   glossary,
+  references,
 ]
 export default chapters

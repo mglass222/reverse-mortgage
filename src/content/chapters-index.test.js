@@ -22,7 +22,7 @@ describe('chapter registry', () => {
     }
   })
 
-  it('contains all 11 chapters in the expected order', () => {
+  it('contains all chapters in the expected order', () => {
     expect(chapters.map((c) => c.slug)).toEqual([
       'introduction',
       'reverse-vs-forward',
@@ -35,6 +35,7 @@ describe('chapter registry', () => {
       'origination-process',
       'risks-suitability',
       'glossary',
+      'references',
     ])
   })
 

@@ -281,6 +281,16 @@ a { color: inherit; }
   font-size: 1.04rem;
   margin: 0 0 1.1rem;
 }
+.chapter a {
+  color: var(--bronze-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  overflow-wrap: anywhere;
+  transition: color 0.2s ease;
+}
+.chapter a:hover { color: var(--green); }
+.chapter a:focus-visible { outline: 2px solid var(--bronze); outline-offset: 2px; border-radius: 2px; }
 
 /* ---------------- Key Takeaways ---------------- */
 .key-takeaways {

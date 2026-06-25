@@ -10,8 +10,8 @@ export default {
       heading: { en: 'MIP: up-front and ongoing', ko: 'MIP: 선납과 지속' },
       body: [
         {
-          en: 'Initial MIP (IMIP) is 2.0% of the Maximum Claim Amount, charged at closing on value up to the national cap — not on the amount drawn. Annual MIP is 0.50% accruing on the outstanding balance, capitalized monthly into the loan rather than billed. Together they fund the MMI Fund that backs the non-recourse guarantee and the 98%-MCA assignment option. Treat IMIP as the single largest closing line and annual MIP as a 50 bp add-on to the effective accrual rate when you model the balance trajectory.',
-          ko: '선납 MIP(IMIP)는 최대 청구 금액(MCA)의 2.0%로, 인출액이 아니라 전국 한도까지의 가치에 대해 마감 시 부과됩니다. 연간 MIP는 미상환 잔액에 0.50%로 누적되며, 청구되지 않고 매월 대출에 자본화됩니다. 이 둘이 비소구 보증과 MCA 98% 양도 옵션을 뒷받침하는 MMI 기금을 조성합니다. IMIP는 마감에서 가장 큰 단일 항목으로, 연간 MIP는 잔액 궤적을 모델링할 때 실효 누적금리에 더하는 50bp 가산으로 다루십시오.',
+          en: 'Initial MIP (IMIP) is 2.0% of the Maximum Claim Amount, charged at closing on value up to the national cap — not on the amount drawn. [Annual MIP is 0.50%](https://www.hud.gov/sites/documents/17-12ml.pdf) accruing on the outstanding balance, capitalized monthly into the loan rather than billed. Together they fund the MMI Fund that backs the non-recourse guarantee and the 98%-MCA assignment option. Treat IMIP as the single largest closing line and annual MIP as a 50 bp add-on to the effective accrual rate when you model the balance trajectory.',
+          ko: '선납 MIP(IMIP)는 최대 청구 금액(MCA)의 2.0%로, 인출액이 아니라 전국 한도까지의 가치에 대해 마감 시 부과됩니다. [연간 MIP는 미상환 잔액에 0.50%](https://www.hud.gov/sites/documents/17-12ml.pdf)로 누적되며, 청구되지 않고 매월 대출에 자본화됩니다. 이 둘이 비소구 보증과 MCA 98% 양도 옵션을 뒷받침하는 MMI 기금을 조성합니다. IMIP는 마감에서 가장 큰 단일 항목으로, 연간 MIP는 잔액 궤적을 모델링할 때 실효 누적금리에 더하는 50bp 가산으로 다루십시오.',
         },
       ],
     },
@@ -26,6 +26,7 @@ export default {
     },
     {
       heading: { en: 'Fixed vs. ARM: index, margin, floor', ko: '고정 vs. ARM: 지수, 마진, 하한' },
+      diagram: 'rateStack',
       body: [
         {
           en: 'Fixed-rate HECMs (lump sum only) price off a fixed note rate. ARMs — which unlock tenure, term, and the LOC — accrue at an index (now standardly 30-day Average SOFR, having replaced LIBOR, or a CMT index) plus the lender margin, resetting monthly or annually within periodic and lifetime caps. The same margin also feeds the expected rate used to size the PLF, subject to the expected-rate floor, so a thinner margin both lowers accrual and enlarges initial capacity. Margin is the lever that moves both pricing and proceeds — quote it deliberately.',
