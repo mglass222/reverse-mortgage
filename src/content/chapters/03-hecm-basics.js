@@ -1,51 +1,51 @@
 export default {
   slug: 'hecm-basics',
-  title: { en: 'HECM Program Basics', ko: 'HECM 프로그램 기초' },
+  title: { en: 'HECM Program Architecture', ko: 'HECM 프로그램 구조' },
   intro: {
-    en: 'The Home Equity Conversion Mortgage (HECM) is the federally insured reverse mortgage program administered by HUD and insured by the FHA. It is by far the most common reverse mortgage in the United States, and its rules define how the product works.',
-    ko: '주택자본전환모기지(HECM)는 HUD가 관리하고 FHA가 보증하는 연방 보험 역모기지 프로그램입니다. 미국에서 가장 일반적인 역모기지이며, 그 규정이 이 상품의 작동 방식을 정의합니다.',
+    en: 'The HECM is FHA’s reverse mortgage under National Housing Act Title I/II authority, administered by HUD and securitized through Ginnie Mae. If you have run FHA forward paper (203(b)) and understand the MMI Fund and Ginnie execution, you already know most of the plumbing — the differences are in the insurance triggers and the borrower gate.',
+    ko: 'HECM은 전국주택법(National Housing Act) 권한에 따른 FHA의 역모기지로, HUD가 관리하고 지니메(Ginnie Mae)를 통해 유동화됩니다. FHA 정방향 상품(203(b))을 다뤄 보았고 MMI 기금과 지니메 실행을 이해한다면 대부분의 기본 구조는 이미 아는 셈입니다. 차이는 보험 발동 조건과 차주 진입 요건에 있습니다.',
   },
   sections: [
     {
-      heading: { en: 'FHA insurance', ko: 'FHA 보험' },
+      heading: { en: 'Insurance and secondary-market execution', ko: '보험과 2차 시장 실행' },
       body: [
         {
-          en: 'HECMs are insured by the FHA. Borrowers pay a Mortgage Insurance Premium (MIP) that funds the federal guarantee. This insurance is what makes the loan "non-recourse" — the borrower or heirs never owe more than the home is worth when it is sold (covered in detail in a later chapter).',
-          ko: 'HECM은 FHA가 보증합니다. 차용인은 연방 보증을 위한 재원이 되는 모기지 보험료(MIP)를 납부합니다. 이 보험 덕분에 대출이 "비소구(non-recourse)"가 됩니다. 즉, 주택을 매각할 때 차용인이나 상속인은 주택 가치 이상을 부담하지 않습니다(이후 챕터에서 자세히 다룹니다).',
+          en: 'HECMs are insured out of the Mutual Mortgage Insurance Fund, funded by borrower-paid MIP. The non-recourse guarantee runs to both sides: it caps borrower/heir liability at value, and it makes the lender whole on shortfalls. Servicers may assign the loan to HUD once the balance reaches 98% of the Maximum Claim Amount, transferring tail risk to FHA. Most originations are pooled into Ginnie Mae HMBS, so your familiar Ginnie execution and the OAS on those pools drive the margins that ultimately set borrower pricing.',
+          ko: 'HECM은 차주가 납부하는 MIP로 조성되는 상호모기지보험기금(MMI Fund)에서 보험이 지급됩니다. 비소구 보증은 양쪽 모두에 적용됩니다. 차주·상속인의 책임을 가치 한도로 제한하고, 부족분에 대해 대출기관을 보전합니다. 서비서는 잔액이 최대 청구 금액(MCA)의 98%에 도달하면 대출을 HUD에 양도하여 후순위 위험을 FHA로 이전할 수 있습니다. 대부분의 신규 대출은 지니메 HMBS로 풀링되므로, 익숙한 지니메 실행과 해당 풀의 OAS가 결국 차주 가격을 정하는 마진을 좌우합니다.',
         },
       ],
     },
     {
-      heading: { en: 'Borrower eligibility', ko: '차용인 자격 요건' },
+      heading: { en: 'Borrower and occupancy gate', ko: '차주 및 거주 요건' },
       body: [
         {
-          en: 'The youngest borrower must be at least 62. The home must be the borrower’s primary residence. Before applying, borrowers must complete mandatory counseling with a HUD-approved counselor, and lenders perform a financial assessment to confirm the borrower can meet ongoing obligations.',
-          ko: '최연소 차용인은 만 62세 이상이어야 합니다. 해당 주택은 차용인의 주 거주지여야 합니다. 신청 전 차용인은 HUD 승인 상담사와의 의무 상담을 완료해야 하며, 대출 기관은 차용인이 지속적인 의무를 이행할 수 있는지 확인하기 위해 재정 평가를 실시합니다.',
+          en: 'Youngest titleholder must be 62+ (the age drives the PLF, as a proxy for expected loan duration). The subject must be the principal residence — second homes and pure investment properties are out, which removes most of your CRE playbook. Eligible non-borrowing spouses can defer due-and-payable status under post-2014 rules, but they do not receive proceeds and the PLF is set off the youngest of the borrowing/non-borrowing pair. HUD-approved counseling is a hard gate ahead of application — a consumer-protection step with no analogue in forward origination.',
+          ko: '최연소 명의자는 만 62세 이상이어야 합니다(나이는 기대 대출 기간의 대리변수로서 PLF를 결정합니다). 대상 주택은 주 거주지여야 합니다. 별장이나 순수 투자용 부동산은 제외되며, 이는 귀하의 CRE 전략 대부분을 배제합니다. 2014년 이후 규정에 따라 적격 비차용 배우자는 상환 의무 발생을 유예할 수 있으나 자금을 수령하지 못하며, PLF는 차용·비차용 배우자 중 최연소자를 기준으로 설정됩니다. HUD 승인 상담은 신청에 앞선 필수 관문으로, 정방향 대출에는 대응물이 없는 소비자 보호 절차입니다.',
         },
       ],
     },
     {
-      heading: { en: 'Property eligibility', ko: '주택 자격 요건' },
+      heading: { en: 'Eligible collateral', ko: '적격 담보' },
       body: [
         {
-          en: 'Eligible properties include single-family homes, two-to-four-unit buildings where the borrower occupies one unit, HUD-approved condominiums, and certain manufactured homes that meet FHA requirements. The property must meet FHA condition standards.',
-          ko: '자격 대상 주택에는 단독주택, 차용인이 한 세대에 거주하는 2~4세대 건물, HUD 승인 콘도미니엄, 그리고 FHA 요건을 충족하는 일부 조립식 주택이 포함됩니다. 해당 주택은 FHA의 상태 기준을 충족해야 합니다.',
+          en: 'One-to-four units with borrower occupancy of one, FHA-approved condominium projects (or single-unit approval), PUDs, and FHA-compliant manufactured homes. The property must clear FHA minimum property standards on the appraisal — expect repair set-asides where it does not, much like an FHA forward 203(b) condition, not a 203(k) rehab.',
+          ko: '1~4세대(차주가 한 세대 거주), FHA 승인 콘도 프로젝트(또는 단일 세대 승인), 계획단지(PUD), FHA 기준에 부합하는 조립식 주택이 적격입니다. 부동산은 감정에서 FHA 최소주택기준을 통과해야 하며, 그렇지 못하면 수리 적립이 요구됩니다. 이는 203(k) 리모델링이 아니라 FHA 정방향 203(b) 조건과 유사합니다.',
         },
       ],
     },
   ],
   takeaways: [
     {
-      en: 'HECM is the FHA-insured reverse mortgage and the dominant product in the U.S.',
-      ko: 'HECM은 FHA가 보증하는 역모기지로 미국에서 가장 보편적인 상품입니다.',
+      en: 'FHA-insured via the MMI Fund; pooled into Ginnie Mae HMBS — the execution and economics you already know.',
+      ko: 'MMI 기금을 통한 FHA 보험, 지니메 HMBS로 풀링. 귀하가 이미 아는 실행과 경제 구조입니다.',
     },
     {
-      en: 'Core eligibility: youngest borrower 62+, primary residence, mandatory counseling, and a financial assessment.',
-      ko: '핵심 자격: 최연소 차용인 62세 이상, 주 거주지, 의무 상담, 재정 평가입니다.',
+      en: 'Servicer can assign to HUD at 98% of MCA, shifting tail risk to FHA.',
+      ko: '서비서는 MCA의 98%에서 HUD에 양도하여 후순위 위험을 FHA로 이전할 수 있습니다.',
     },
     {
-      en: 'MIP funds the FHA guarantee that makes the loan non-recourse.',
-      ko: 'MIP는 대출을 비소구로 만드는 FHA 보증의 재원이 됩니다.',
+      en: 'Gate: youngest titleholder 62+, principal residence only, mandatory counseling, FHA property standards.',
+      ko: '요건: 최연소 명의자 62세 이상, 주 거주지 한정, 의무 상담, FHA 주택 기준.',
     },
   ],
 }

@@ -12,8 +12,8 @@ describe('ChapterLayout', () => {
 
   it('renders the English title, intro, and key takeaways', () => {
     renderChapter()
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Why Reverse Mortgages Exist/)
-    expect(screen.getByText(/house-rich but cash-poor/)).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Reframing the Loan You Already Know/)
+    expect(screen.getByText(/a familiar one run in reverse/)).toBeInTheDocument()
     expect(screen.getByText('Key Takeaways')).toBeInTheDocument()
   })
 

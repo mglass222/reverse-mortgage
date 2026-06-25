@@ -1,51 +1,51 @@
 export default {
   slug: 'risks-suitability',
-  title: { en: 'Risks, Suitability & Alternatives', ko: '위험, 적합성, 대안' },
+  title: { en: 'Suitability, Risk & Alternatives', ko: '적합성, 위험, 대안' },
   intro: {
-    en: 'A reverse mortgage is powerful for the right borrower and a poor fit for others. A good professional can describe both sides plainly — who benefits, what the risks are, and what alternatives exist.',
-    ko: '역모기지는 적합한 차용인에게는 강력하지만 그렇지 않은 사람에게는 맞지 않습니다. 좋은 전문가는 양면을 솔직하게 설명할 수 있습니다. 누가 혜택을 보는지, 위험은 무엇인지, 어떤 대안이 있는지입니다.',
+    en: 'Your value to this client is judgment, not product placement. The HECM is the right instrument for a specific equity-and-tenure profile and a poor one outside it. Frame the recommendation the way you would a CRE capital-stack decision: match the instrument to the hold period, the cash-flow need, and the exit — and document why the alternatives lost.',
+    ko: '이 고객에게 귀하의 가치는 상품 끼워 팔기가 아니라 판단입니다. HECM은 특정 자본·거주기간 프로필에는 적합한 수단이고 그 밖에서는 부적합합니다. CRE 자본구조 결정을 다루듯 권고를 구성하십시오. 수단을 보유 기간, 현금흐름 필요, 출구에 맞추고, 왜 대안이 탈락했는지 문서화하십시오.',
   },
   sections: [
     {
-      heading: { en: 'Who it suits', ko: '적합한 대상' },
+      heading: { en: 'Where it fits', ko: '적합한 경우' },
       body: [
         {
-          en: 'It tends to fit homeowners who intend to stay in the home long term, need additional cash flow or a financial cushion, and can reliably keep paying property taxes, insurance, and maintenance.',
-          ko: '주택에 장기간 거주할 의향이 있고, 추가 현금 흐름이나 재정적 완충이 필요하며, 재산세·보험·유지비를 안정적으로 계속 납부할 수 있는 주택 소유자에게 적합한 경향이 있습니다.',
+          en: 'Best fit: a borrower with a long expected tenure in the home, a genuine cash-flow or standby-liquidity need, sufficient residual income to carry property charges, and modest concern about leaving the property unencumbered to heirs. The growing LOC for a still-liquid 62-to-70-year-old planning sequence-of-returns defense is a sophisticated use case; so is using tenure payments to defer a Social Security claim to age 70.',
+          ko: '가장 적합한 경우: 주택에 장기간 거주할 것으로 기대되고, 실질적인 현금흐름 또는 대기 유동성 필요가 있으며, 재산 부담금을 감당할 충분한 잔여소득이 있고, 부동산을 무부담 상태로 상속인에게 남기는 데 대한 우려가 크지 않은 차주입니다. 아직 유동성이 있는 62~70세가 수익률 순서 위험에 대비하는 데 쓰는 증가형 신용한도는 정교한 활용 사례이며, 사회보장연금 수령을 70세까지 미루기 위해 종신 지급을 쓰는 것도 그렇습니다.',
         },
       ],
     },
     {
-      heading: { en: 'Risks and pitfalls', ko: '위험과 함정' },
+      heading: { en: 'Where the risk concentrates', ko: '위험이 집중되는 곳' },
       body: [
         {
-          en: 'Equity erodes as the balance grows, costs are significant, and a borrower who fails to pay taxes or insurance can default and risk foreclosure. Proceeds may also affect means-tested benefits and reduce what heirs inherit.',
-          ko: '잔액이 늘면서 자본이 줄어들고, 비용이 상당하며, 세금이나 보험을 납부하지 못한 차용인은 채무 불이행에 빠져 압류 위험에 처할 수 있습니다. 또한 수령액이 소득 기반 복지 혜택에 영향을 주고 상속인의 상속분을 줄일 수 있습니다.',
+          en: 'The hazards are real: equity erodes through compounding, costs are front-loaded, and a property-charge lapse can drive a default-based foreclosure despite "no payments." Proceeds can disqualify the borrower from means-tested benefits — SSI and Medicaid spend-down are the usual traps, since lump-sum cash retained past month-end counts as a resource. And the estate consequence is direct: a larger ending balance is a smaller inheritance. For short expected tenure (a likely move within a few years), the front-loaded IMIP and costs rarely amortize into value.',
+          ko: '위험은 실재합니다. 복리로 자본이 잠식되고, 비용이 앞당겨지며, 재산 부담금 누락은 "상환이 없는데도" 불이행 기반 압류를 초래할 수 있습니다. 수령액이 소득 기반 복지 자격을 박탈할 수 있습니다. SSI와 메디케이드 자산소진(spend-down)이 흔한 함정인데, 월말을 넘겨 보유한 일시금 현금이 자산으로 계산되기 때문입니다. 상속 영향도 직접적입니다. 종료 잔액이 클수록 상속분이 줄어듭니다. 기대 거주기간이 짧으면(수년 내 이주 가능성), 앞당겨진 IMIP와 비용이 가치로 회수되는 경우가 드뭅니다.',
         },
       ],
     },
     {
-      heading: { en: 'Alternatives', ko: '대안' },
+      heading: { en: 'The alternatives to rule out first', ko: '먼저 배제할 대안' },
       body: [
         {
-          en: 'Alternatives worth discussing include downsizing to a smaller home, a home equity loan or HELOC, refinancing a forward mortgage, or tapping public benefits and family support. The best choice depends on the borrower’s goals and timeline.',
-          ko: '논의할 만한 대안으로는 더 작은 집으로 다운사이징, 주택담보대출이나 HELOC, 정모기지 재융자, 또는 공공 복지와 가족 지원 활용이 있습니다. 최선의 선택은 차용인의 목표와 시간 계획에 따라 달라집니다.',
+          en: 'Run the comparables: a HELOC or cash-out refinance (cheaper if the borrower passes ATR/QM and can service payments), downsizing (often the most capital-efficient if tenure is the real flex), a sale-leaseback or intra-family arrangement, or simply sequencing public benefits and existing assets. The HECM wins when the borrower fails income-based underwriting, intends to stay, and values non-recourse, non-cancelable access over cost. Show that work — it is what distinguishes advice from a sale.',
+          ko: '비교군을 검토하십시오. HELOC 또는 현금인출 재융자(차주가 ATR/QM을 통과하고 상환을 감당할 수 있다면 더 저렴), 다운사이징(거주기간이 진짜 변수라면 대개 가장 자본 효율적), 매각 후 임차(sale-leaseback)나 가족 내 거래, 또는 단순히 공공 복지와 기존 자산의 활용 순서 조정입니다. HECM은 차주가 소득 기반 심사를 통과하지 못하고, 계속 거주하려 하며, 비용보다 비소구·취소불가 접근성을 중시할 때 우위를 가집니다. 그 분석을 보여주십시오. 그것이 판매와 조언을 가르는 지점입니다.',
         },
       ],
     },
   ],
   takeaways: [
     {
-      en: 'Best fit: long-term occupants who need cash flow and can sustain taxes, insurance, and upkeep.',
-      ko: '가장 적합한 대상: 현금 흐름이 필요하고 세금·보험·유지비를 감당할 수 있는 장기 거주자.',
+      en: 'Best fit: long tenure, real cash-flow/liquidity need, ability to carry property charges, low estate sensitivity.',
+      ko: '가장 적합: 장기 거주, 실질적 현금흐름·유동성 필요, 재산 부담금 감당 능력, 낮은 상속 민감도.',
     },
     {
-      en: 'Key risks: eroding equity, high costs, default risk, and effects on benefits and heirs.',
-      ko: '주요 위험: 자본 감소, 높은 비용, 채무 불이행 위험, 복지 혜택과 상속인에 대한 영향.',
+      en: 'Watch SSI/Medicaid resource limits, default-based foreclosure on property-charge lapse, and estate erosion.',
+      ko: 'SSI·메디케이드 자산 한도, 재산 부담금 누락에 따른 불이행 압류, 상속 잠식에 주의하십시오.',
     },
     {
-      en: 'Always weigh alternatives: downsizing, HELOC, refinancing, or public benefits.',
-      ko: '항상 대안을 함께 검토하세요: 다운사이징, HELOC, 재융자, 공공 복지.',
+      en: 'Rule out HELOC, cash-out refi, and downsizing first; the HECM wins on non-recourse, non-cancelable access.',
+      ko: '먼저 HELOC, 현금인출 재융자, 다운사이징을 배제하십시오. HECM은 비소구·취소불가 접근성에서 우위입니다.',
     },
   ],
 }

@@ -1,52 +1,52 @@
 export default {
   slug: 'origination-process',
-  title: { en: 'The Origination Process', ko: '대출 개시 절차' },
+  title: { en: 'Origination Workflow & Underwriting', ko: '대출 개시 절차와 심사' },
   intro: {
-    en: 'The HECM process resembles a forward loan in places but starts differently — with mandatory counseling — and centers on age and equity rather than repayment ability. Knowing the sequence helps you set client expectations.',
-    ko: 'HECM 절차는 일부 정모기지와 비슷하지만 시작이 다릅니다. 의무 상담으로 시작하며 상환 능력보다 나이와 자본을 중심으로 합니다. 절차의 순서를 알면 고객의 기대치를 설정하는 데 도움이 됩니다.',
+    en: 'The pipeline will feel familiar with three insertions you do not run on forward files: mandatory counseling at the front, a Financial Assessment that ends in a LESA decision rather than an approve/decline, and FHA collateral controls including a possible second appraisal. Knowing where these sit lets you set realistic timelines and avoid surprises at the closing table.',
+    ko: '파이프라인은 정방향 파일에서는 다루지 않는 세 가지 삽입 요소만 빼면 익숙하게 느껴질 것입니다. 맨 앞의 의무 상담, 승인/거절이 아니라 LESA 결정으로 끝나는 재정 평가, 그리고 2차 감정 가능성을 포함한 FHA 담보 통제입니다. 이들이 어디에 위치하는지 알면 현실적인 일정을 세우고 마감 테이블에서의 돌발을 피할 수 있습니다.',
   },
   sections: [
     {
-      heading: { en: 'Counseling first', ko: '상담 우선' },
+      heading: { en: 'The sequence', ko: '절차 순서' },
       diagram: 'processFlow',
       body: [
         {
-          en: 'Before an application can proceed, the borrower must complete counseling with a HUD-approved counselor who explains costs, alternatives, and obligations. This consumer-protection step has no equivalent in a typical forward loan.',
-          ko: '신청이 진행되기 전에 차용인은 비용, 대안, 의무를 설명하는 HUD 승인 상담사와의 상담을 완료해야 합니다. 이 소비자 보호 절차는 일반적인 정모기지에는 없는 단계입니다.',
+          en: 'Counseling → application and disclosures → Financial Assessment → FHA appraisal (with FHA’s Collateral Risk Assessment, which can mandate a second appraisal and use the lower value) → underwriting and LESA determination → closing with the standard rescission period → first disbursement subject to the first-year draw cap. The counseling certificate is a hard prerequisite; the file cannot proceed without it, and it has a validity window you must track against your lock.',
+          ko: '상담 → 신청 및 공시 → 재정 평가 → FHA 감정(FHA의 담보위험평가 포함, 2차 감정을 요구하고 낮은 가치를 사용할 수 있음) → 심사 및 LESA 결정 → 표준 철회기간이 있는 마감 → 1차년도 인출 한도를 적용한 최초 지급. 상담 수료증은 필수 선행 요건입니다. 이것 없이는 파일이 진행될 수 없으며, 록(lock)과 대조해 추적해야 하는 유효기간이 있습니다.',
         },
       ],
     },
     {
-      heading: { en: 'Application through closing', ko: '신청부터 클로징까지' },
+      heading: { en: 'The Financial Assessment in practice', ko: '실무에서의 재정 평가' },
       body: [
         {
-          en: 'After counseling: application → financial assessment → FHA appraisal → underwriting → closing → first disbursement. The financial assessment checks the borrower’s ability to keep paying taxes, insurance, and upkeep, and may require a LESA set-aside.',
-          ko: '상담 후에는 신청 → 재정 평가 → FHA 감정 → 심사 → 클로징 → 최초 지급 순으로 진행됩니다. 재정 평가는 차용인이 세금, 보험, 유지비를 계속 납부할 수 있는지를 확인하며 LESA 적립을 요구할 수 있습니다.',
+          en: 'You are not testing repayment of the HECM — you are testing the borrower’s capacity and willingness to keep property charges current over the loan’s expected life. It combines a credit and property-charge payment history review with a residual-income calculation by household size and region. Extenuating circumstances and compensating factors are documented much as on a forward manual underwrite. The output is not binary: adequate capacity closes clean; marginal capacity closes with a fully- or partially-funded LESA; only egregious willingness problems derail the file.',
+          ko: '귀하는 HECM의 상환을 검증하는 것이 아니라, 대출의 기대 수명 동안 차주가 재산 부담금을 연체 없이 유지할 능력과 의지를 검증하는 것입니다. 신용 및 재산 부담금 납부 이력 검토와 가구 규모·지역별 잔여소득 계산을 결합합니다. 참작 사유와 보완 요인은 정방향 수기 심사에서와 거의 같게 문서화됩니다. 결과는 이분법이 아닙니다. 능력이 충분하면 깔끔히 마감되고, 한계적이면 전액 또는 부분 적립 LESA로 마감되며, 심각한 의지 문제만 파일을 무산시킵니다.',
         },
       ],
     },
     {
-      heading: { en: 'How it differs from a forward loan', ko: '정모기지와의 차이점' },
+      heading: { en: 'What differs from a forward close', ko: '정방향 마감과의 차이' },
       body: [
         {
-          en: 'The biggest differences are the mandatory counseling requirement, the focus on age and equity instead of income to repay, and set-asides (LESA) for taxes and insurance built into the loan structure.',
-          ko: '가장 큰 차이는 의무 상담 요건, 상환 소득 대신 나이와 자본에 대한 집중, 그리고 대출 구조에 포함된 세금·보험 적립(LESA)입니다.',
+          en: 'Net the obligor analysis down to property-charge persistence, add the counseling gate, expect FHA’s second-appraisal control on questionable valuations, and build the LESA into your Principal Limit math before you quote net proceeds. The closing instruments differ too (loan agreement, repair rider, NBS documentation). None of it is exotic — it is your forward FHA discipline reweighted toward collateral and longevity rather than income.',
+          ko: '채무자 분석을 재산 부담금 지속성으로 좁히고, 상담 관문을 추가하며, 의심스러운 평가에는 FHA의 2차 감정 통제를 예상하고, 순수령액을 견적하기 전에 LESA를 원금한도 계산에 반영하십시오. 마감 서류도 다릅니다(대출 약정서, 수리 특약, 비차용 배우자 문서). 어느 것도 생소하지 않습니다. 소득이 아니라 담보와 장수 쪽으로 재가중된 귀하의 정방향 FHA 규율일 뿐입니다.',
         },
       ],
     },
   ],
   takeaways: [
     {
-      en: 'Mandatory HUD counseling comes before the application — unique to reverse mortgages.',
-      ko: '의무 HUD 상담은 신청보다 먼저 이루어지며 역모기지만의 특징입니다.',
+      en: 'Counseling is a hard gate with a validity window — track it against your rate lock.',
+      ko: '상담은 유효기간이 있는 필수 관문입니다. 금리 록과 대조해 추적하십시오.',
     },
     {
-      en: 'Sequence: counseling → application → financial assessment → appraisal → underwriting → closing.',
-      ko: '순서: 상담 → 신청 → 재정 평가 → 감정 → 심사 → 클로징.',
+      en: 'The Financial Assessment ends in a LESA decision, not approve/decline; it underwrites property-charge persistence.',
+      ko: '재정 평가는 승인/거절이 아니라 LESA 결정으로 끝납니다. 재산 부담금 지속성을 심사합니다.',
     },
     {
-      en: 'A LESA set-aside may be required to ensure taxes and insurance are paid.',
-      ko: '세금과 보험 납부를 보장하기 위해 LESA 적립이 요구될 수 있습니다.',
+      en: 'Expect FHA’s Collateral Risk Assessment / possible second appraisal using the lower value.',
+      ko: 'FHA의 담보위험평가와 낮은 가치를 사용하는 2차 감정 가능성을 예상하십시오.',
     },
   ],
 }

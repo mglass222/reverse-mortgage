@@ -1,65 +1,61 @@
 export default {
   slug: 'reverse-vs-forward',
-  title: { en: 'Reverse vs. Traditional (Forward) Mortgages', ko: '역모기지 vs. 전통적(정) 모기지' },
+  title: { en: 'Reverse vs. Forward — A Practitioner’s Contrast', ko: '역방향 vs. 정방향 — 실무자의 대조' },
   intro: {
-    en: 'If you know forward mortgages, the fastest way to understand a reverse mortgage is by contrast. Almost every feature is mirrored: the direction of payments, the path of the balance, whether a monthly payment is required, and how a borrower qualifies.',
-    ko: '정모기지를 알고 있다면 역모기지를 이해하는 가장 빠른 방법은 대조해 보는 것입니다. 지급의 방향, 잔액의 변화, 월 상환금 필요 여부, 차용인의 자격 요건 등 거의 모든 특징이 거울처럼 반대입니다.',
+    en: 'The fastest way to internalize a HECM is to lay it against the forward loan file you know cold. Five axes do most of the work: payment direction, balance trajectory, the rate stack, the underwriting basis, and the maturity trigger. Get these straight and the rest of the program follows.',
+    ko: 'HECM을 체득하는 가장 빠른 방법은 귀하가 훤히 아는 정방향 대출 파일과 나란히 놓는 것입니다. 다섯 가지 축이 핵심을 설명합니다. 지급 방향, 잔액 궤적, 금리 구조, 심사 기준, 만기 트리거입니다. 이것을 정리하면 나머지 프로그램은 자연히 따라옵니다.',
   },
   sections: [
     {
-      heading: { en: 'Direction of payments and balance', ko: '지급과 잔액의 방향' },
+      heading: { en: 'Payment direction and balance trajectory', ko: '지급 방향과 잔액 궤적' },
       diagram: 'balanceDirection',
       body: [
         {
-          en: 'In a forward mortgage, the borrower sends money to the lender each month, and the loan balance steadily declines toward zero. In a reverse mortgage, money flows the other way: the lender disburses funds to the borrower, and the balance grows as interest and insurance are added.',
-          ko: '정모기지에서는 차용인이 매월 대출 기관에 돈을 보내고 대출 잔액이 0을 향해 꾸준히 줄어듭니다. 역모기지에서는 돈이 반대 방향으로 흐릅니다. 대출 기관이 차용인에게 자금을 지급하고, 이자와 보험료가 더해지면서 잔액이 늘어납니다.',
+          en: 'Forward: the borrower remits, principal amortizes down, LTV improves over time and equity builds. Reverse: the lender disburses (or holds an open line), interest and MIP capitalize, and the balance climbs while equity erodes. You are underwriting negative amortization by design — the same phenomenon you treat as a red flag on a forward Option-ARM is the core mechanic here.',
+          ko: '정방향: 차주가 납입하고 원금이 상각되어 줄며, 시간이 지나면서 LTV가 개선되고 자본이 쌓입니다. 역방향: 대출기관이 지급하거나(또는 개설된 한도를 보유하고) 이자와 MIP가 자본화되며, 잔액이 오르는 동안 자본이 잠식됩니다. 귀하는 설계상 역상각을 심사하는 것입니다. 정방향 옵션-ARM에서 위험 신호로 취급하던 바로 그 현상이 여기서는 핵심 메커니즘입니다.',
         },
       ],
     },
     {
-      heading: { en: 'No monthly mortgage payment', ko: '월 모기지 상환금이 없음' },
+      heading: { en: 'The rate stack: expected rate vs. note rate', ko: '금리 구조: 예상금리 vs. 노트금리' },
       body: [
         {
-          en: 'A reverse mortgage borrower makes no monthly principal-and-interest payment. The debt is repaid later, when the loan matures. This is the opposite of forward amortization, where each payment reduces principal.',
-          ko: '역모기지 차용인은 매월 원리금 상환을 하지 않습니다. 대출이 만기에 이르면 나중에 부채를 상환합니다. 이는 각 상환금이 원금을 줄이는 정모기지의 상각 방식과 정반대입니다.',
-        },
-        {
-          en: 'The borrower still must pay property taxes, homeowners insurance, and upkeep, and keep the home as a primary residence. Failing to do so can trigger default.',
-          ko: '차용인은 여전히 재산세, 주택 보험료, 유지 관리비를 납부하고 해당 주택을 주 거주지로 유지해야 합니다. 이를 지키지 못하면 채무 불이행이 발생할 수 있습니다.',
+          en: 'Forward pricing gives you one rate that both sizes the payment and accrues the balance. HECM splits them. The expected rate (10-Year CMT or SOFR swap + margin, subject to a floor) is a sizing rate used only to look up the Principal Limit Factor — it is the discount rate in the actuarial draw calculation. The note rate (index + margin, reset monthly or annually on an ARM) is what actually accrues. A higher expected rate shrinks the PLF and the up-front capacity even though it never touches a payment.',
+          ko: '정방향 가격은 하나의 금리로 상환액 산정과 잔액 누적을 모두 처리합니다. HECM은 이를 분리합니다. 예상금리(10년 만기 CMT 또는 SOFR 스왑 + 마진, 하한 적용)는 원금한도 계수(PLF)를 조회하는 데에만 쓰이는 산정 금리로, 보험계리적 인출 계산의 할인율입니다. 노트금리(지수 + 마진, ARM에서 월별 또는 연별 재설정)가 실제로 누적되는 금리입니다. 예상금리가 높을수록 상환액에는 영향이 없어도 PLF와 초기 가용액이 줄어듭니다.',
         },
       ],
     },
     {
-      heading: { en: 'Qualification differs', ko: '자격 요건의 차이' },
+      heading: { en: 'Underwriting basis: from ATR to the Financial Assessment', ko: '심사 기준: ATR에서 재정 평가로' },
       body: [
         {
-          en: 'Forward underwriting centers on income and debt-to-income ratio: can the borrower afford the monthly payment? Reverse qualification centers on age, home equity, and a financial assessment of whether the borrower can keep paying taxes, insurance, and upkeep.',
-          ko: '정모기지 심사는 소득과 부채상환비율(DTI)을 중심으로 합니다. 즉, 차용인이 월 상환금을 감당할 수 있는지를 봅니다. 역모기지 자격은 나이, 주택 자본, 그리고 차용인이 세금·보험·유지비를 계속 납부할 수 있는지에 대한 재정 평가를 중심으로 합니다.',
+          en: 'There is no DTI hurdle and no ATR/QM repayment test, because there is no required payment. In its place sits the FHA Financial Assessment: a credit history review plus a residual-income and willingness analysis confined to the borrower’s capacity to keep paying property charges (taxes, insurance, HOA). Fail or fall short and the file is not declined — it is conditioned with a LESA carve-out from the Principal Limit. The risk you used to underwrite to income, you now underwrite to property-charge persistence.',
+          ko: 'DTI 기준도, ATR/QM 상환 검증도 없습니다. 의무 상환금이 없기 때문입니다. 그 자리에 FHA 재정 평가가 들어섭니다. 신용 이력 검토에 더해, 차주가 재산 부담금(세금, 보험, HOA)을 계속 납부할 수 있는 능력에 한정한 잔여소득 및 납부 의지 분석입니다. 미달하더라도 파일이 거절되지 않고 원금한도에서 LESA를 적립하는 조건이 붙습니다. 예전에 소득으로 심사하던 위험을 이제는 재산 부담금 납부의 지속성으로 심사합니다.',
         },
       ],
     },
     {
-      heading: { en: 'Side-by-side summary', ko: '나란히 비교 요약' },
+      heading: { en: 'Maturity trigger and recourse', ko: '만기 트리거와 소구권' },
       body: [
         {
-          en: 'Who pays whom: forward, borrower pays lender; reverse, lender pays borrower. Balance over time: forward falls; reverse rises. Monthly payment: forward required; reverse not required. Qualification: forward by income/DTI; reverse by age/equity. When due: forward at the end of the term; reverse at a maturity event such as the last borrower leaving the home.',
-          ko: '누가 누구에게 지급하는가: 정모기지는 차용인이 대출 기관에, 역모기지는 대출 기관이 차용인에게 지급합니다. 시간에 따른 잔액: 정모기지는 감소, 역모기지는 증가합니다. 월 상환금: 정모기지는 필수, 역모기지는 불필요합니다. 자격: 정모기지는 소득/DTI, 역모기지는 나이/자본 기준입니다. 만기 시점: 정모기지는 기간 종료 시, 역모기지는 마지막 차용인이 집을 떠나는 등의 만기 사유 발생 시입니다.',
+          en: 'A forward loan matures on its amortization schedule or on a balloon date you set. A HECM has no maturity date — it becomes due and payable on a maturity event (last borrower’s death, sale, 12-month non-occupancy, or property-charge default). And unlike the recourse carve-outs you negotiate on CRE paper, the HECM is non-recourse by statute: the FHA insurance, not a guaranty, absorbs any balance above net sale proceeds.',
+          ko: '정방향 대출은 상각 일정 또는 귀하가 설정한 만기일에 만기가 됩니다. HECM에는 만기일이 없습니다. 만기 사유(마지막 차주의 사망, 매각, 12개월 비거주, 재산 부담금 불이행) 발생 시 상환 의무가 발생합니다. 또한 CRE 문서에서 협상하는 소구권 예외 조항과 달리 HECM은 법령상 비소구입니다. 보증이 아니라 FHA 보험이 순매각대금을 초과하는 잔액을 흡수합니다.',
         },
       ],
     },
   ],
   takeaways: [
     {
-      en: 'Reverse mortgages mirror forward mortgages: payments and balance move in the opposite direction.',
-      ko: '역모기지는 정모기지를 거울처럼 반영합니다. 지급과 잔액이 반대 방향으로 움직입니다.',
+      en: 'Expected rate sizes the draw (PLF lookup); the note rate accrues the balance — two rates, two jobs.',
+      ko: '예상금리는 인출액을 산정하고(PLF 조회), 노트금리는 잔액을 누적합니다. 금리 둘, 역할 둘입니다.',
     },
     {
-      en: 'No monthly P&I payment is due, but taxes, insurance, and upkeep remain the borrower’s responsibility.',
-      ko: '월 원리금 상환은 없지만 세금, 보험, 유지 관리는 여전히 차용인의 책임입니다.',
+      en: 'No ATR/DTI test; the Financial Assessment underwrites property-charge persistence, with LESA as the conditioning tool.',
+      ko: 'ATR/DTI 검증은 없습니다. 재정 평가가 재산 부담금 납부 지속성을 심사하며, LESA가 조건 부과 수단입니다.',
     },
     {
-      en: 'Qualification shifts from income/DTI to age, equity, and a financial assessment.',
-      ko: '자격 기준이 소득/DTI에서 나이, 자본, 재정 평가로 바뀝니다.',
+      en: 'No maturity date — due and payable on a maturity event; non-recourse by statute, not by negotiated carve-out.',
+      ko: '만기일이 없으며 만기 사유 발생 시 상환 의무가 생깁니다. 협상된 예외가 아니라 법령에 의해 비소구입니다.',
     },
   ],
 }

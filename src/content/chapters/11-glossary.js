@@ -1,26 +1,26 @@
 export default {
   slug: 'glossary',
-  title: { en: 'Glossary', ko: '용어집' },
+  title: { en: 'Glossary — Working Definitions', ko: '용어집 — 실무 정의' },
   intro: {
-    en: 'Key reverse mortgage terms in English and Korean. Use these definitions to stay precise when explaining HECMs to clients and colleagues.',
-    ko: '영어와 한국어로 정리한 주요 역모기지 용어입니다. 고객과 동료에게 HECM을 설명할 때 정확성을 유지하기 위해 이 정의를 활용하세요.',
+    en: 'Precise terms for client and counterparty conversations, in English and Korean. Definitions are written for a lender, not a first-time borrower — they assume you know the forward analogue.',
+    ko: '고객 및 거래상대방과의 대화를 위한 정확한 용어를 영어와 한국어로 정리했습니다. 정의는 처음 대출받는 차주가 아니라 대출 실무자를 위해 작성되었으며, 정방향 대응 개념을 안다고 전제합니다.',
   },
   sections: [
     {
       heading: { en: 'HECM', ko: 'HECM (주택자본전환모기지)' },
       body: [
         {
-          en: 'Home Equity Conversion Mortgage: the FHA-insured reverse mortgage program administered by HUD, and the most common reverse mortgage in the U.S.',
-          ko: '주택자본전환모기지: HUD가 관리하는 FHA 보증 역모기지 프로그램으로 미국에서 가장 일반적인 역모기지입니다.',
+          en: 'Home Equity Conversion Mortgage — FHA’s reverse mortgage under the National Housing Act, administered by HUD and securitized via Ginnie Mae HMBS. The dominant U.S. reverse product.',
+          ko: '주택자본전환모기지 — 전국주택법에 따른 FHA의 역모기지로, HUD가 관리하고 지니메 HMBS로 유동화됩니다. 미국의 지배적인 역모기지 상품입니다.',
         },
       ],
     },
     {
-      heading: { en: 'Maximum Claim Amount', ko: '최대 청구 금액' },
+      heading: { en: 'Maximum Claim Amount (MCA)', ko: '최대 청구 금액 (MCA)' },
       body: [
         {
-          en: 'The lesser of the home’s appraised value and the FHA HECM lending limit; the base figure for the Principal Limit and upfront MIP.',
-          ko: '주택 감정가와 FHA HECM 대출 한도 중 더 낮은 금액으로, 원금한도와 선납 MIP의 기준이 되는 값입니다.',
+          en: 'Lesser of appraised value and the single national FHA HECM limit. Anchors the PLF calculation, the 2% IMIP base, and the 98% assignment threshold.',
+          ko: '감정가와 전국 단일 FHA HECM 한도 중 낮은 금액. PLF 계산, 2% IMIP 기준, 98% 양도 임계치의 기준이 됩니다.',
         },
       ],
     },
@@ -28,8 +28,8 @@ export default {
       heading: { en: 'Principal Limit', ko: '원금한도' },
       body: [
         {
-          en: 'The total amount a borrower can access, equal to the Maximum Claim Amount multiplied by the Principal Limit Factor.',
-          ko: '차용인이 받을 수 있는 총액으로, 최대 청구 금액에 원금한도 계수를 곱한 값과 같습니다.',
+          en: 'MCA × PLF — the actuarial present value of the lender’s commitment; the gross capacity before mandatory obligations, costs, and first-year draw limits.',
+          ko: 'MCA × PLF — 대출기관 약정의 보험계리적 현재가치. 필수 의무, 비용, 1차년도 인출 한도 적용 전의 총 가용액입니다.',
         },
       ],
     },
@@ -37,26 +37,26 @@ export default {
       heading: { en: 'Principal Limit Factor (PLF)', ko: '원금한도 계수 (PLF)' },
       body: [
         {
-          en: 'A factor between 0 and 1 from FHA tables, based on borrower age and expected rate, used to compute the Principal Limit.',
-          ko: '차용인의 나이와 예상 이자율을 기반으로 한 FHA 표의 0과 1 사이 계수로, 원금한도를 계산하는 데 사용됩니다.',
+          en: 'FHA-tabled factor (0–1) indexed to youngest borrower age and expected rate. Effectively a risk-based maximum LTV that rises with age and falls as the expected rate rises.',
+          ko: '최연소 차주 나이와 예상금리로 색인된 FHA 표 계수(0~1). 사실상 위험 기반 최대 LTV로, 나이가 많을수록 커지고 예상금리가 높을수록 작아집니다.',
         },
       ],
     },
     {
-      heading: { en: 'Expected Interest Rate', ko: '예상 이자율' },
+      heading: { en: 'Expected Rate', ko: '예상금리' },
       body: [
         {
-          en: 'The rate used to look up the PLF. A higher expected rate produces a lower PLF and smaller proceeds.',
-          ko: 'PLF를 조회하는 데 사용되는 이자율입니다. 예상 이자율이 높을수록 PLF가 낮아지고 수령액이 줄어듭니다.',
+          en: 'The sizing/discount rate (index + margin, subject to a floor) used solely to look up the PLF. Distinct from the note rate that accrues the balance.',
+          ko: '오직 PLF 조회에만 쓰이는 산정·할인 금리(지수 + 마진, 하한 적용). 잔액을 누적하는 노트금리와 구별됩니다.',
         },
       ],
     },
     {
-      heading: { en: 'MIP', ko: 'MIP (모기지 보험료)' },
+      heading: { en: 'IMIP / Annual MIP', ko: '선납 MIP / 연간 MIP' },
       body: [
         {
-          en: 'Mortgage Insurance Premium: an upfront charge (2% of the Maximum Claim Amount) plus an annual charge (0.5% of the balance) that funds the FHA guarantee.',
-          ko: '모기지 보험료: 선납 부담금(최대 청구 금액의 2%)과 연간 부담금(잔액의 0.5%)으로, FHA 보증의 재원이 됩니다.',
+          en: 'Initial MIP is 2.0% of MCA at closing; annual MIP is 0.50% capitalized on the outstanding balance. Together they fund the MMI Fund behind the non-recourse guarantee.',
+          ko: '선납 MIP는 마감 시 MCA의 2.0%, 연간 MIP는 미상환 잔액에 자본화되는 0.50%입니다. 둘이 비소구 보증을 뒷받침하는 MMI 기금을 조성합니다.',
         },
       ],
     },
@@ -64,8 +64,8 @@ export default {
       heading: { en: 'Non-Recourse', ko: '비소구' },
       body: [
         {
-          en: 'A protection meaning the borrower or heirs never owe more than the home’s value when the loan is repaid by sale.',
-          ko: '매각으로 대출을 상환할 때 차용인이나 상속인이 주택 가치 이상을 부담하지 않는다는 보호 장치입니다.',
+          en: 'Statutory cap limiting payoff to the lesser of balance or net sale proceeds; FHA insurance (not a guaranty or the estate) absorbs any shortfall. Effectively an FHA-written put.',
+          ko: '상환을 잔액과 순매각대금 중 낮은 금액으로 제한하는 법령상 한도. 부족분은 보증이나 상속재산이 아니라 FHA 보험이 흡수합니다. 사실상 FHA가 발행한 풋옵션입니다.',
         },
       ],
     },
@@ -73,35 +73,17 @@ export default {
       heading: { en: 'Negative Amortization', ko: '역상각' },
       body: [
         {
-          en: 'The growth of the loan balance over time because interest and MIP are added rather than paid down each month.',
-          ko: '매월 상환하는 대신 이자와 MIP가 더해지면서 대출 잔액이 시간이 지나며 늘어나는 현상입니다.',
+          en: 'The by-design upward compounding of the balance (draws + interest + annual MIP) absent any amortizing payment — the core HECM mechanic, treated as a defect on forward paper.',
+          ko: '상각 상환 없이 잔액(인출액 + 이자 + 연간 MIP)이 설계상 위로 복리 증가하는 것. HECM의 핵심 메커니즘이며, 정방향 문서에서는 결함으로 취급됩니다.',
         },
       ],
     },
     {
-      heading: { en: 'Tenure Payment', ko: '종신 지급' },
+      heading: { en: 'Line of Credit (Growing)', ko: '신용한도 (증가형)' },
       body: [
         {
-          en: 'A fixed monthly disbursement that continues for as long as the borrower lives in the home as a primary residence.',
-          ko: '차용인이 주택을 주 거주지로 사용하는 동안 계속되는 고정 월 지급액입니다.',
-        },
-      ],
-    },
-    {
-      heading: { en: 'Line of Credit', ko: '신용한도' },
-      body: [
-        {
-          en: 'A reserve the borrower can draw on as needed; its unused portion grows over time, increasing available funds.',
-          ko: '차용인이 필요에 따라 인출할 수 있는 준비금으로, 사용하지 않은 부분이 시간이 지나면서 늘어나 사용 가능 자금이 증가합니다.',
-        },
-      ],
-    },
-    {
-      heading: { en: 'Maturity Event', ko: '만기 사유' },
-      body: [
-        {
-          en: 'An event that makes the loan due and payable, such as the last borrower dying, selling, permanently moving out, or defaulting.',
-          ko: '마지막 차용인의 사망, 매각, 영구 이주, 또는 채무 불이행 등 대출의 상환 의무를 발생시키는 사유입니다.',
+          en: 'A non-cancelable credit line whose undrawn portion grows at the note rate + annual MIP — the program’s negative amortization working in the borrower’s favor.',
+          ko: '취소할 수 없는 신용한도로, 미인출 부분이 노트금리 + 연간 MIP로 증가합니다. 프로그램의 역상각이 차주에게 유리하게 작동하는 것입니다.',
         },
       ],
     },
@@ -109,16 +91,43 @@ export default {
       heading: { en: 'LESA', ko: 'LESA (생애 기대 적립금)' },
       body: [
         {
-          en: 'Life Expectancy Set-Aside: funds reserved from the Principal Limit to pay property taxes and insurance when the financial assessment requires it.',
-          ko: '생애 기대 적립금: 재정 평가가 요구할 때 재산세와 보험을 납부하기 위해 원금한도에서 따로 적립해 두는 자금입니다.',
+          en: 'Life Expectancy Set-Aside — funds carved from the Principal Limit, per the Financial Assessment, to escrow property taxes and insurance. A lender-controlled impound protecting collateral position.',
+          ko: '생애 기대 적립금 — 재정 평가에 따라 원금한도에서 떼어 재산세와 보험을 에스크로하는 자금. 담보 지위를 보호하는, 대출기관이 통제하는 임포운드입니다.',
+        },
+      ],
+    },
+    {
+      heading: { en: 'Eligible Non-Borrowing Spouse (NBS)', ko: '적격 비차용 배우자 (NBS)' },
+      body: [
+        {
+          en: 'A spouse not on the note who, meeting HUD conditions, may defer due-and-payable status after the last borrower’s death. Does not receive proceeds; influences the PLF via the youngest age.',
+          ko: '노트에 없는 배우자로, HUD 요건을 충족하면 마지막 차주 사망 후 상환 의무 발생을 유예할 수 있습니다. 자금은 수령하지 못하며, 최연소 나이를 통해 PLF에 영향을 줍니다.',
+        },
+      ],
+    },
+    {
+      heading: { en: 'Assignment (98% MCA)', ko: '양도 (MCA 98%)' },
+      body: [
+        {
+          en: 'Servicer election to assign the loan to HUD once the balance reaches 98% of MCA, transferring tail/crossover risk to FHA while the borrower’s terms continue unchanged.',
+          ko: '잔액이 MCA의 98%에 도달하면 서비서가 대출을 HUD에 양도하는 선택. 차주의 조건은 그대로 유지한 채 후순위·교차점 위험을 FHA로 이전합니다.',
+        },
+      ],
+    },
+    {
+      heading: { en: 'Maturity Event', ko: '만기 사유' },
+      body: [
+        {
+          en: 'A trigger making the loan due and payable: last borrower’s death, sale/transfer, 12-month non-occupancy, or a property-charge/occupancy default subject to HUD loss-mitigation.',
+          ko: '대출의 상환 의무를 발생시키는 트리거: 마지막 차주 사망, 매각·이전, 12개월 비거주, 또는 HUD 손실완화 대상인 재산 부담금·거주 불이행입니다.',
         },
       ],
     },
   ],
   takeaways: [
     {
-      en: 'Bookmark this glossary — precise terminology builds client trust.',
-      ko: '이 용어집을 즐겨찾기에 추가하세요. 정확한 용어는 고객의 신뢰를 쌓습니다.',
+      en: 'Keep the two-rate distinction (expected vs. note) and the non-recourse put front of mind — they explain the rest.',
+      ko: '두 금리 구분(예상 vs. 노트)과 비소구 풋옵션을 항상 염두에 두십시오. 나머지를 설명해 줍니다.',
     },
   ],
 }
