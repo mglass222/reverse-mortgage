@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom'
+// HashRouter keeps client-side routing working on GitHub Pages (a project
+// subpath) without server rewrites or deep-link 404s.
+import { HashRouter, Routes, Route, Navigate, useParams } from 'react-router-dom'
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext.jsx'
 import ui from './i18n/ui-strings.js'
 import Sidebar from './components/Sidebar.jsx'
@@ -35,7 +37,7 @@ function ChapterRoute() {
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <HashRouter>
         <DisclaimerBanner />
         <Header />
         <div className="app-body">
@@ -49,7 +51,7 @@ export default function App() {
             </Routes>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </LanguageProvider>
   )
 }

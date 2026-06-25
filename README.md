@@ -1,10 +1,15 @@
 # Reverse Mortgage Learning Site
 
+**🔗 Live site: https://mglass222.github.io/reverse-mortgage/**
+
 An educational web app that teaches U.S. **HECM** (Home Equity Conversion Mortgage)
 reverse mortgages to experienced mortgage and CRE lending professionals — built for
 the Korean banking community in and around Los Angeles. Content is bilingual
 (**English ⇄ Korean**) with an instant language toggle, and the site includes a live
 HECM estimator.
+
+The live site is deployed to GitHub Pages automatically on every push to `main`
+(see `.github/workflows/deploy.yml`).
 
 > The material is written at a **practitioner's altitude**: it assumes fluency in
 > forward/commercial real estate underwriting and teaches reverse mortgages by
