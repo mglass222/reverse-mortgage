@@ -292,6 +292,40 @@ a { color: inherit; }
 .chapter a:hover { color: var(--green); }
 .chapter a:focus-visible { outline: 2px solid var(--bronze); outline-offset: 2px; border-radius: 2px; }
 
+/* Next-chapter link at the foot of each chapter */
+.chapter a.chapter-next {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  margin-top: 2.75rem;
+  padding: 1rem 1.3rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.chapter a.chapter-next:hover {
+  border-color: var(--bronze);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+.chapter-next-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: var(--ink-faint);
+}
+.chapter-next-title {
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--green);
+  text-align: right;
+}
+
 /* ---------------- Key Takeaways ---------------- */
 .key-takeaways {
   margin-top: 3rem;

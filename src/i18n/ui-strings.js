@@ -43,6 +43,7 @@ const ui = {
     },
   },
   keyTakeaways: { en: 'Key Takeaways', ko: '핵심 요약' },
+  nextChapter: { en: 'Next chapter', ko: '다음 챕터' },
 }
 
 export default ui
