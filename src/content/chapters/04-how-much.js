@@ -41,8 +41,8 @@ export default {
       ko: '원금한도 = MCA × PLF. PLF는 나이와 금리로 색인된 위험 기반 최대 LTV로 읽으십시오.',
     },
     {
-      en: 'MCA uses one national cap ($1,209,750, 2025), not county limits; excess value needs a proprietary jumbo.',
-      ko: 'MCA는 카운티 한도가 아닌 전국 단일 한도($1,209,750, 2025)를 씁니다. 초과 가치는 독자 점보가 필요합니다.',
+      en: 'MCA uses one national cap ($1,249,125, 2026), not county limits; excess value needs a proprietary jumbo.',
+      ko: 'MCA는 카운티 한도가 아닌 전국 단일 한도($1,249,125, 2026)를 씁니다. 초과 가치는 독자 점보가 필요합니다.',
     },
     {
       en: 'Net the Principal Limit for lien payoff, costs, MIP, LESA, and the first-year 60% draw rule before quoting.',

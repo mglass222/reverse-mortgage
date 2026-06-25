@@ -13,7 +13,6 @@ export function calculateHECM({
   homeValue,
   existingLiens = 0,
   expectedRate,
-  margin = 0,
   disbursementOption = 'lump',
   termYears = 10,
   otherClosingCosts = DEFAULT_OTHER_CLOSING_COSTS,
@@ -28,8 +27,10 @@ export function calculateHECM({
   const mandatoryObligations = existingLiens + totalUpfrontCosts
   const netAvailable = Math.max(principalLimit - mandatoryObligations, 0)
 
-  // Monthly accrual rate ≈ note rate (expected rate + margin) + annual MIP.
-  const monthlyRate = (expectedRate / 100 + margin / 100 + ANNUAL_MIP_RATE) / 12
+  // The expected rate already includes the lender margin (index + margin), and
+  // the note rate that accrues the balance is approximately the expected rate,
+  // so the monthly accrual rate ≈ expected rate + annual MIP.
+  const monthlyRate = (expectedRate / 100 + ANNUAL_MIP_RATE) / 12
   const disbursement = buildDisbursement({
     option: disbursementOption,
     netAvailable,

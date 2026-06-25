@@ -9,7 +9,6 @@ const initial = {
   homeValue: 500000,
   existingLiens: 50000,
   expectedRate: 5,
-  margin: 2,
   disbursementOption: 'lump',
   termYears: 10,
 }
@@ -42,9 +41,6 @@ export default function Calculator() {
         </label>
         <label>{pick(ui.calc.expectedRate)}
           <input type="number" step="0.1" value={form.expectedRate} onChange={update('expectedRate')} />
-        </label>
-        <label>{pick(ui.calc.margin)}
-          <input type="number" step="0.1" value={form.margin} onChange={update('margin')} />
         </label>
         <label>{pick(ui.calc.disbursement)}
           <select value={form.disbursementOption} onChange={update('disbursementOption')}>
