@@ -19,7 +19,7 @@ export default function BalanceGrowthChart() {
         <polyline points="40,150 120,140 200,120 300,90" fill="none" stroke="#234b3e" strokeWidth="2" />
         <polyline points="40,165 120,150 200,120 300,60" fill="none" stroke="#9c6a34" strokeWidth="3" />
         <text x="210" y="55" fontSize="10" fill="#9c6a34">{pick(L.balance)}</text>
-        <text x="210" y="110" fontSize="10" fill="#234b3e">{pick(L.home)}</text>
+        <text x="210" y="150" fontSize="10" fill="#234b3e">{pick(L.home)}</text>
         <text x="150" y="190" fontSize="10" fill="#8a8170">{pick(L.time)}</text>
       </svg>
     </figure>
