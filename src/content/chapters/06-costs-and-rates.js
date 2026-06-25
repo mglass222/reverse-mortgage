@@ -28,8 +28,8 @@ export default {
       heading: { en: 'Fixed vs. ARM: index, margin, floor', ko: '고정 vs. ARM: 지수, 마진, 하한' },
       body: [
         {
-          en: 'Fixed-rate HECMs (lump sum only) price off a fixed note rate. ARMs — which unlock tenure, term, and the LOC — accrue at an index (CMT or, increasingly, 30-day Average SOFR) plus the lender margin, resetting monthly or annually within periodic and lifetime caps. The same margin also feeds the expected rate used to size the PLF, subject to the expected-rate floor, so a thinner margin both lowers accrual and enlarges initial capacity. Margin is the lever that moves both pricing and proceeds — quote it deliberately.',
-          ko: '고정금리 HECM(일시금만)은 고정 노트금리로 가격이 책정됩니다. 종신·기간제·신용한도를 여는 ARM은 지수(CMT 또는 점차 늘어나는 30일 평균 SOFR)에 대출기관 마진을 더해 누적하며, 주기적·생애 한도 내에서 월별 또는 연별로 재설정됩니다. 동일한 마진이 PLF 산정에 쓰이는 예상금리에도 반영되되 예상금리 하한이 적용되므로, 마진이 얇으면 누적도 낮아지고 초기 가용액도 커집니다. 마진은 가격과 수령액을 모두 움직이는 레버입니다. 신중하게 제시하십시오.',
+          en: 'Fixed-rate HECMs (lump sum only) price off a fixed note rate. ARMs — which unlock tenure, term, and the LOC — accrue at an index (now standardly 30-day Average SOFR, having replaced LIBOR, or a CMT index) plus the lender margin, resetting monthly or annually within periodic and lifetime caps. The same margin also feeds the expected rate used to size the PLF, subject to the expected-rate floor, so a thinner margin both lowers accrual and enlarges initial capacity. Margin is the lever that moves both pricing and proceeds — quote it deliberately.',
+          ko: '고정금리 HECM(일시금만)은 고정 노트금리로 가격이 책정됩니다. 종신·기간제·신용한도를 여는 ARM은 지수(이제 LIBOR를 대체한 30일 평균 SOFR가 표준이며, 또는 CMT 지수)에 대출기관 마진을 더해 누적하며, 주기적·생애 한도 내에서 월별 또는 연별로 재설정됩니다. 동일한 마진이 PLF 산정에 쓰이는 예상금리에도 반영되되 예상금리 하한이 적용되므로, 마진이 얇으면 누적도 낮아지고 초기 가용액도 커집니다. 마진은 가격과 수령액을 모두 움직이는 레버입니다. 신중하게 제시하십시오.',
         },
       ],
     },

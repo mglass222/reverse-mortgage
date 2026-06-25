@@ -11,8 +11,8 @@ export default {
       diagram: 'processFlow',
       body: [
         {
-          en: 'Counseling → application and disclosures → Financial Assessment → FHA appraisal (with FHA’s Collateral Risk Assessment, which can mandate a second appraisal and use the lower value) → underwriting and LESA determination → closing with the standard rescission period → first disbursement subject to the first-year draw cap. The counseling certificate is a hard prerequisite; the file cannot proceed without it, and it has a validity window you must track against your lock.',
-          ko: '상담 → 신청 및 공시 → 재정 평가 → FHA 감정(FHA의 담보위험평가 포함, 2차 감정을 요구하고 낮은 가치를 사용할 수 있음) → 심사 및 LESA 결정 → 표준 철회기간이 있는 마감 → 1차년도 인출 한도를 적용한 최초 지급. 상담 수료증은 필수 선행 요건입니다. 이것 없이는 파일이 진행될 수 없으며, 록(lock)과 대조해 추적해야 하는 유효기간이 있습니다.',
+          en: 'Counseling → application and disclosures → Financial Assessment → FHA appraisal (with FHA’s Collateral Risk Assessment, which can mandate a second appraisal and use the lower value) → underwriting and LESA determination → closing with the standard rescission period → first disbursement subject to the first-year draw cap. The counseling certificate is a hard prerequisite; the file cannot proceed without it, and it is valid for 180 days from completion — track that window against your rate lock.',
+          ko: '상담 → 신청 및 공시 → 재정 평가 → FHA 감정(FHA의 담보위험평가 포함, 2차 감정을 요구하고 낮은 가치를 사용할 수 있음) → 심사 및 LESA 결정 → 표준 철회기간이 있는 마감 → 1차년도 인출 한도를 적용한 최초 지급. 상담 수료증은 필수 선행 요건입니다. 이것 없이는 파일이 진행될 수 없으며, 완료일로부터 180일간 유효하므로 금리 록과 대조해 그 기간을 추적하십시오.',
         },
       ],
     },
