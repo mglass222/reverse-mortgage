@@ -13,8 +13,8 @@ export default function DisbursementOptionsDiagram() {
       <svg viewBox="0 0 320 120" role="img" aria-label="Disbursement options">
         {opts.map((o, i) => (
           <g key={i} transform={`translate(${10 + i * 78},30)`}>
-            <rect width="70" height="50" rx="6" fill="#e2e8f0" stroke="#1e3a5f" />
-            <text x="35" y="30" fontSize="9" textAnchor="middle" fill="#1e3a5f">{pick(o)}</text>
+            <rect width="70" height="50" rx="6" fill="#f0e4cf" stroke="#9c6a34" />
+            <text x="35" y="30" fontSize="9" textAnchor="middle" fill="#7a5024">{pick(o)}</text>
           </g>
         ))}
       </svg>

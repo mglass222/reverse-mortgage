@@ -10,11 +10,11 @@ export default function NonRecourseDiagram() {
   return (
     <figure className="diagram">
       <svg viewBox="0 0 320 180" role="img" aria-label={pick(L.cap)}>
-        <rect x="60" y="30" width="60" height="120" fill="#cbd5e1" />
-        <rect x="200" y="80" width="60" height="70" fill="#0f766e" />
-        <text x="90" y="20" fontSize="9" textAnchor="middle" fill="#475569">{pick(L.balance)}</text>
-        <text x="230" y="70" fontSize="9" textAnchor="middle" fill="#0f766e">{pick(L.owed)}</text>
-        <text x="160" y="170" fontSize="9" textAnchor="middle" fill="#b45309">{pick(L.cap)}</text>
+        <rect x="60" y="30" width="60" height="120" fill="#e3d6bb" />
+        <rect x="200" y="80" width="60" height="70" fill="#234b3e" />
+        <text x="90" y="20" fontSize="9" textAnchor="middle" fill="#8a8170">{pick(L.balance)}</text>
+        <text x="230" y="70" fontSize="9" textAnchor="middle" fill="#234b3e">{pick(L.owed)}</text>
+        <text x="160" y="170" fontSize="9" textAnchor="middle" fill="#9c6a34">{pick(L.cap)}</text>
       </svg>
     </figure>
   )
