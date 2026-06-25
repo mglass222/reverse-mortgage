@@ -22,6 +22,12 @@ describe('chapter registry', () => {
     }
   })
 
+  it('contains all 11 chapters in order ending with the glossary', () => {
+    expect(chapters).toHaveLength(11)
+    expect(chapters[0].slug).toBe('introduction')
+    expect(chapters[10].slug).toBe('glossary')
+  })
+
   it('has no Korean leaf identical to its English leaf', () => {
     const leaves = []
     const walk = (o) => {
