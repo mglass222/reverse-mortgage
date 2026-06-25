@@ -146,6 +146,9 @@ a { color: inherit; }
   max-height: calc(100vh - 64px);
   overflow-y: auto;
 }
+/* Mobile chapter-menu toggle: hidden on desktop, revealed in the breakpoint. */
+.sidebar-toggle { display: none; }
+.sidebar-nav { display: block; }
 .sidebar-heading {
   font-size: 0.68rem;
   text-transform: uppercase;
@@ -452,16 +455,69 @@ a { color: inherit; }
 @media (max-width: 860px) {
   .app-body { flex-direction: column; }
   .sidebar {
-    position: static;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     flex-basis: auto;
     width: 100%;
     max-height: none;
-    padding: 1.4rem 1.5rem;
+    overflow: visible;
+    padding: 0;
+    background: var(--paper);
     border-bottom: 1px solid var(--line);
   }
+  /* Collapsible chapter menu */
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    min-height: 48px;
+    padding: 0.85rem 1.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--bronze-deep);
+  }
+  .sidebar-toggle-icon { font-size: 1.1rem; line-height: 1; }
+  .sidebar-toggle:focus-visible { outline: 2px solid var(--bronze); outline-offset: -2px; }
+  .sidebar-nav {
+    display: none;
+    padding: 0 1.25rem 1.1rem;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .sidebar-nav.is-open { display: block; }
+  .sidebar .sidebar-heading { display: none; }
+  /* Larger tap targets in the menu */
+  .sidebar a,
+  .sidebar-calc-link { padding: 0.7rem 0.6rem; }
+
   .app-main { padding: 2rem 1.5rem 4rem; max-width: none; }
   .calc-form { grid-template-columns: 1fr; }
-  .app-header { padding: 0.9rem 1.5rem; }
+  .app-header { padding: 0.9rem 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .app-header { padding: 0.8rem 1rem; }
+  .app-title { font-size: 1.05rem; padding-left: 1.15rem; }
+  .app-title::before { width: 0.4rem; height: 1.2rem; }
+  .lang-toggle { padding: 0.5rem 0.95rem; }
+  .app-main { padding: 1.6rem 1.15rem 3.5rem; }
+  .chapter-intro { font-size: 1.08rem; }
+  .chapter-intro::first-letter { font-size: 3em; }
+  .chapter h2 { font-size: 1.3rem; }
+  .chapter p { font-size: 1rem; }
+  .key-takeaways,
+  .calc-results { padding-left: 1.1rem; padding-right: 1.1rem; }
+  .diagram { padding: 1rem; }
+  .calc-row--emphasis > span:last-child { font-size: 1.3rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
