@@ -22,10 +22,20 @@ describe('chapter registry', () => {
     }
   })
 
-  it('contains all 11 chapters in order ending with the glossary', () => {
-    expect(chapters).toHaveLength(11)
-    expect(chapters[0].slug).toBe('introduction')
-    expect(chapters[10].slug).toBe('glossary')
+  it('contains all 11 chapters in the expected order', () => {
+    expect(chapters.map((c) => c.slug)).toEqual([
+      'introduction',
+      'reverse-vs-forward',
+      'hecm-basics',
+      'how-much',
+      'disbursement-options',
+      'costs-and-rates',
+      'balance-growth',
+      'obligations-maturity',
+      'origination-process',
+      'risks-suitability',
+      'glossary',
+    ])
   })
 
   it('has no Korean leaf identical to its English leaf', () => {

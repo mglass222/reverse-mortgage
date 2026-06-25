@@ -2,16 +2,16 @@ export default {
   slug: 'hecm-basics',
   title: { en: 'HECM Program Architecture', ko: 'HECM 프로그램 구조' },
   intro: {
-    en: 'The HECM is FHA’s reverse mortgage under National Housing Act Title I/II authority, administered by HUD and securitized through Ginnie Mae. If you have run FHA forward paper (203(b)) and understand the MMI Fund and Ginnie execution, you already know most of the plumbing — the differences are in the insurance triggers and the borrower gate.',
-    ko: 'HECM은 전국주택법(National Housing Act) 권한에 따른 FHA의 역모기지로, HUD가 관리하고 지니메(Ginnie Mae)를 통해 유동화됩니다. FHA 정방향 상품(203(b))을 다뤄 보았고 MMI 기금과 지니메 실행을 이해한다면 대부분의 기본 구조는 이미 아는 셈입니다. 차이는 보험 발동 조건과 차주 진입 요건에 있습니다.',
+    en: 'The HECM is FHA’s reverse mortgage under Section 255 of Title II of the National Housing Act, administered by HUD and securitized through Ginnie Mae. If you have run FHA forward paper (203(b)) and understand the MMI Fund and Ginnie execution, you already know most of the plumbing — the differences are in the insurance triggers and the borrower gate.',
+    ko: 'HECM은 전국주택법(National Housing Act) Title II 제255조에 따른 FHA의 역모기지로, HUD가 관리하고 지니메(Ginnie Mae)를 통해 유동화됩니다. FHA 정방향 상품(203(b))을 다뤄 보았고 MMI 기금과 지니메 실행을 이해한다면 대부분의 기본 구조는 이미 아는 셈입니다. 차이는 보험 발동 조건과 차주 진입 요건에 있습니다.',
   },
   sections: [
     {
       heading: { en: 'Insurance and secondary-market execution', ko: '보험과 2차 시장 실행' },
       body: [
         {
-          en: 'HECMs are insured out of the Mutual Mortgage Insurance Fund, funded by borrower-paid MIP. The non-recourse guarantee runs to both sides: it caps borrower/heir liability at value, and it makes the lender whole on shortfalls. Servicers may assign the loan to HUD once the balance reaches 98% of the Maximum Claim Amount, transferring tail risk to FHA. Most originations are pooled into Ginnie Mae HMBS, so your familiar Ginnie execution and the OAS on those pools drive the margins that ultimately set borrower pricing.',
-          ko: 'HECM은 차주가 납부하는 MIP로 조성되는 상호모기지보험기금(MMI Fund)에서 보험이 지급됩니다. 비소구 보증은 양쪽 모두에 적용됩니다. 차주·상속인의 책임을 가치 한도로 제한하고, 부족분에 대해 대출기관을 보전합니다. 서비서는 잔액이 최대 청구 금액(MCA)의 98%에 도달하면 대출을 HUD에 양도하여 후순위 위험을 FHA로 이전할 수 있습니다. 대부분의 신규 대출은 지니메 HMBS로 풀링되므로, 익숙한 지니메 실행과 해당 풀의 OAS가 결국 차주 가격을 정하는 마진을 좌우합니다.',
+          en: 'HECMs are insured out of the Mutual Mortgage Insurance Fund, funded by borrower-paid MIP. The FHA insurance runs to both sides: it caps borrower/heir liability at value, and it covers lender shortfalls subject to FHA rules. Servicers may assign the loan to HUD once the balance reaches 98% of the Maximum Claim Amount, transferring tail risk to FHA. Most originations are pooled into Ginnie Mae HMBS, so your familiar Ginnie execution and the OAS on those pools drive the margins that ultimately set borrower pricing.',
+          ko: 'HECM은 차주가 납부하는 MIP로 조성되는 상호모기지보험기금(MMI Fund)에서 보험이 지급됩니다. FHA 보험은 양쪽 모두에 적용됩니다. 차주·상속인의 책임을 가치 한도로 제한하고, FHA 규정에 따라 대출기관의 부족분을 보전합니다. 서비서는 잔액이 최대 청구 금액(MCA)의 98%에 도달하면 대출을 HUD에 양도하여 후순위 위험을 FHA로 이전할 수 있습니다. 대부분의 신규 대출은 지니메 HMBS로 풀링되므로, 익숙한 지니메 실행과 해당 풀의 OAS가 결국 차주 가격을 정하는 마진을 좌우합니다.',
         },
       ],
     },

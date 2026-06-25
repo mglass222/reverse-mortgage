@@ -20,8 +20,8 @@ export default {
       heading: { en: 'Maximum Claim Amount and the national cap', ko: '최대 청구 금액과 전국 한도' },
       body: [
         {
-          en: 'MCA = lesser of appraised value and the FHA HECM limit (one national figure, $1,209,750 for 2025 — note it is a single nationwide cap, not the county-by-county schedule you use on forward FHA). Value above the cap is simply unmonetizable through the HECM; that is where a proprietary "jumbo reverse" enters the conversation. The MCA also sets the up-front MIP base and the 98% assignment threshold, so it is the anchor figure on the file.',
-          ko: 'MCA = 감정가와 FHA HECM 한도 중 낮은 금액(전국 단일 수치, 2025년 $1,209,750 — 정방향 FHA에서 쓰는 카운티별 표가 아니라 전국 단일 한도임에 유의). 한도를 초과하는 가치는 HECM으로는 현금화할 수 없으며, 바로 이 지점에서 독자(프로프라이어터리) "점보 리버스"가 논의에 들어옵니다. MCA는 선납 MIP 기준과 98% 양도 임계치도 정하므로 파일의 기준 수치입니다.',
+          en: 'MCA = lesser of appraised value and the FHA HECM limit (one national figure, $1,249,125 for 2026 — note it is a single nationwide cap, not the county-by-county schedule you use on forward FHA). Value above the cap is simply unmonetizable through the HECM; that is where a proprietary "jumbo reverse" enters the conversation. The MCA also sets the up-front MIP base and the 98% assignment threshold, so it is the anchor figure on the file.',
+          ko: 'MCA = 감정가와 FHA HECM 한도 중 낮은 금액(전국 단일 수치, 2026년 $1,249,125 — 정방향 FHA에서 쓰는 카운티별 표가 아니라 전국 단일 한도임에 유의). 한도를 초과하는 가치는 HECM으로는 현금화할 수 없으며, 바로 이 지점에서 독자(프로프라이어터리) "점보 리버스"가 논의에 들어옵니다. MCA는 선납 MIP 기준과 98% 양도 임계치도 정하므로 파일의 기준 수치입니다.',
         },
       ],
     },

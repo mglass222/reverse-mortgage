@@ -52,7 +52,7 @@ npm run preview  # preview the production build
 
 ## Project structure
 
-```
+```text
 src/
   main.jsx, App.jsx              # entry + layout shell and routing
   styles/global.css              # editorial "private-bank broadsheet" theme

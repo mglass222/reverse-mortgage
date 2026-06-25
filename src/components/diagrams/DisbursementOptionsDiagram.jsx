@@ -8,9 +8,13 @@ export default function DisbursementOptionsDiagram() {
     { en: 'Term', ko: '기간제' },
     { en: 'Line of credit', ko: '신용한도' },
   ]
+  const aria = {
+    en: 'Diagram of HECM disbursement options: lump sum, tenure, term, and line of credit.',
+    ko: 'HECM 지급 방식 도표: 일시금, 종신, 기간제, 신용한도.',
+  }
   return (
     <figure className="diagram">
-      <svg viewBox="0 0 320 120" role="img" aria-label="Disbursement options">
+      <svg viewBox="0 0 320 120" role="img" aria-label={pick(aria)}>
         {opts.map((o, i) => (
           <g key={i} transform={`translate(${10 + i * 78},30)`}>
             <rect width="70" height="50" rx="6" fill="#f0e4cf" stroke="#9c6a34" />

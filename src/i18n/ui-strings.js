@@ -6,6 +6,9 @@ const ui = {
     calculator: { en: 'Calculator', ko: '계산기' },
   },
   toggle: { en: '한국어', ko: 'English' },
+  toggleAria: { en: 'Switch language', ko: '언어 전환' },
+  chapterNotFound: { en: 'Chapter not found.', ko: '챕터를 찾을 수 없습니다.' },
+  emptyHome: { en: 'No chapters yet.', ko: '아직 챕터가 없습니다.' },
   disclaimer: {
     en: 'Educational use only. Korean translations are first drafts pending expert review. The calculator gives estimates, not official loan quotes.',
     ko: '교육용으로만 사용됩니다. 한국어 번역은 전문가 검토 전 초안입니다. 계산기는 공식 대출 견적이 아닌 추정치를 제공합니다.',
@@ -36,8 +39,8 @@ const ui = {
     lineOfCredit: { en: 'Initial line of credit', ko: '초기 신용한도' },
     lumpSum: { en: 'Lump sum proceeds', ko: '일시금 수령액' },
     estimateNote: {
-      en: 'Estimate only — not an official loan quote. Uses representative factors effective 2025.',
-      ko: '추정치일 뿐 공식 대출 견적이 아닙니다. 2025년 기준 대표 계수를 사용합니다.',
+      en: 'Estimate only — not an official loan quote. Uses representative factors effective 2026.',
+      ko: '추정치일 뿐 공식 대출 견적이 아닙니다. 2026년 기준 대표 계수를 사용합니다.',
     },
   },
   keyTakeaways: { en: 'Key Takeaways', ko: '핵심 요약' },

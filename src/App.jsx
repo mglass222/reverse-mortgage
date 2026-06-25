@@ -19,14 +19,16 @@ function Header() {
 }
 
 function HomeRedirect() {
+  const { pick } = useLanguage()
   if (chapters.length > 0) return <Navigate to={`/chapter/${chapters[0].slug}`} replace />
-  return <p className="empty-home">No chapters yet.</p>
+  return <p className="empty-home">{pick(ui.emptyHome)}</p>
 }
 
 function ChapterRoute() {
+  const { pick } = useLanguage()
   const { slug } = useParams()
   const chapter = chapters.find((c) => c.slug === slug)
-  if (!chapter) return <p>Chapter not found.</p>
+  if (!chapter) return <p>{pick(ui.chapterNotFound)}</p>
   return <ChapterLayout chapter={chapter} />
 }
 

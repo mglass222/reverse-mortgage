@@ -28,8 +28,8 @@ export default {
       heading: { en: 'The alternatives to rule out first', ko: '먼저 배제할 대안' },
       body: [
         {
-          en: 'Run the comparables: a HELOC or cash-out refinance (cheaper if the borrower passes ATR/QM and can service payments), downsizing (often the most capital-efficient if tenure is the real flex), a sale-leaseback or intra-family arrangement, or simply sequencing public benefits and existing assets. The HECM wins when the borrower fails income-based underwriting, intends to stay, and values non-recourse, non-cancelable access over cost. Show that work — it is what distinguishes advice from a sale.',
-          ko: '비교군을 검토하십시오. HELOC 또는 현금인출 재융자(차주가 ATR/QM을 통과하고 상환을 감당할 수 있다면 더 저렴), 다운사이징(거주기간이 진짜 변수라면 대개 가장 자본 효율적), 매각 후 임차(sale-leaseback)나 가족 내 거래, 또는 단순히 공공 복지와 기존 자산의 활용 순서 조정입니다. HECM은 차주가 소득 기반 심사를 통과하지 못하고, 계속 거주하려 하며, 비용보다 비소구·취소불가 접근성을 중시할 때 우위를 가집니다. 그 분석을 보여주십시오. 그것이 판매와 조언을 가르는 지점입니다.',
+          en: 'Run the comparables: a HELOC or cash-out refinance (cheaper if the borrower passes ATR/QM and can service payments), downsizing (often the most capital-efficient if tenure is the real flex), a sale-leaseback or intra-family arrangement, or simply sequencing public benefits and existing assets. The HECM wins for a borrower with a long tenure horizon and stable property-charge capacity who values non-recourse, non-cancelable access and accepts the cost and estate trade-off — often the same borrower a forward cash-out cannot reach. Show that work — it is what distinguishes advice from a sale.',
+          ko: '비교군을 검토하십시오. HELOC 또는 현금인출 재융자(차주가 ATR/QM을 통과하고 상환을 감당할 수 있다면 더 저렴), 다운사이징(거주기간이 진짜 변수라면 대개 가장 자본 효율적), 매각 후 임차(sale-leaseback)나 가족 내 거래, 또는 단순히 공공 복지와 기존 자산의 활용 순서 조정입니다. HECM은 거주 기간이 길고 재산 부담금 납부 능력이 안정적이며, 비소구·취소불가 접근성을 중시하고 비용과 상속 측면의 절충을 받아들이는 차주에게 우위를 가집니다. 정방향 현금인출로는 닿지 못하는 바로 그 차주인 경우가 많습니다. 그 분석을 보여주십시오. 그것이 판매와 조언을 가르는 지점입니다.',
         },
       ],
     },

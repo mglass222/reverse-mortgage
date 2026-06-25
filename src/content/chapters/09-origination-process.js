@@ -20,8 +20,8 @@ export default {
       heading: { en: 'The Financial Assessment in practice', ko: '실무에서의 재정 평가' },
       body: [
         {
-          en: 'You are not testing repayment of the HECM — you are testing the borrower’s capacity and willingness to keep property charges current over the loan’s expected life. It combines a credit and property-charge payment history review with a residual-income calculation by household size and region. Extenuating circumstances and compensating factors are documented much as on a forward manual underwrite. The output is not binary: adequate capacity closes clean; marginal capacity closes with a fully- or partially-funded LESA; only egregious willingness problems derail the file.',
-          ko: '귀하는 HECM의 상환을 검증하는 것이 아니라, 대출의 기대 수명 동안 차주가 재산 부담금을 연체 없이 유지할 능력과 의지를 검증하는 것입니다. 신용 및 재산 부담금 납부 이력 검토와 가구 규모·지역별 잔여소득 계산을 결합합니다. 참작 사유와 보완 요인은 정방향 수기 심사에서와 거의 같게 문서화됩니다. 결과는 이분법이 아닙니다. 능력이 충분하면 깔끔히 마감되고, 한계적이면 전액 또는 부분 적립 LESA로 마감되며, 심각한 의지 문제만 파일을 무산시킵니다.',
+          en: 'You are not testing repayment of the HECM — you are testing the borrower’s capacity and willingness to keep property charges current over the loan’s expected life. It combines a credit and property-charge payment history review with a residual-income calculation by household size and region. Extenuating circumstances and compensating factors are documented much as on a forward manual underwrite. The output is rarely a flat decline: adequate capacity closes clean, and marginal capacity typically closes with a fully- or partially-funded LESA — though serious willingness problems or other eligibility and underwriting defects can still block the file.',
+          ko: '귀하는 HECM의 상환을 검증하는 것이 아니라, 대출의 기대 수명 동안 차주가 재산 부담금을 연체 없이 유지할 능력과 의지를 검증하는 것입니다. 신용 및 재산 부담금 납부 이력 검토와 가구 규모·지역별 잔여소득 계산을 결합합니다. 참작 사유와 보완 요인은 정방향 수기 심사에서와 거의 같게 문서화됩니다. 결과가 곧바로 거절로 이어지는 경우는 드뭅니다. 능력이 충분하면 깔끔히 마감되고 한계적이면 보통 전액 또는 부분 적립 LESA로 마감되지만, 심각한 의지 문제나 그 밖의 자격·심사 결함은 여전히 파일을 막을 수 있습니다.',
         },
       ],
     },

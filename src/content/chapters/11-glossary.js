@@ -19,8 +19,8 @@ export default {
       heading: { en: 'Maximum Claim Amount (MCA)', ko: '최대 청구 금액 (MCA)' },
       body: [
         {
-          en: 'Lesser of appraised value and the single national FHA HECM limit. Anchors the PLF calculation, the 2% IMIP base, and the 98% assignment threshold.',
-          ko: '감정가와 전국 단일 FHA HECM 한도 중 낮은 금액. PLF 계산, 2% IMIP 기준, 98% 양도 임계치의 기준이 됩니다.',
+          en: 'Lesser of appraised value and the single national FHA HECM limit — and, for HECM for Purchase, the lesser of value or sales price, still subject to that national limit. Anchors the PLF calculation, the 2% IMIP base, and the 98% assignment threshold.',
+          ko: '감정가와 전국 단일 FHA HECM 한도 중 낮은 금액. 주택 구입용 HECM(HECM for Purchase)의 경우 감정가 또는 매매가 중 낮은 금액이며, 여전히 전국 한도가 적용됩니다. PLF 계산, 2% IMIP 기준, 98% 양도 임계치의 기준이 됩니다.',
         },
       ],
     },
