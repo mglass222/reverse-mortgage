@@ -20,8 +20,8 @@ export default {
       heading: { en: 'Borrower and occupancy gate', ko: '차주 및 거주 요건' },
       body: [
         {
-          en: 'Youngest titleholder must be 62+ (the age drives the PLF, as a proxy for expected loan duration). The subject must be the principal residence — second homes and pure investment properties are out, which removes most of your CRE playbook. Eligible non-borrowing spouses can defer due-and-payable status under post-2014 rules, but they do not receive proceeds and the PLF is set off the youngest of the borrowing/non-borrowing pair. HUD-approved counseling is a hard gate ahead of application — a consumer-protection step with no analogue in forward origination.',
-          ko: '최연소 명의자는 만 62세 이상이어야 합니다(나이는 기대 대출 기간의 대리변수로서 PLF를 결정합니다). 대상 주택은 주 거주지여야 합니다. 별장이나 순수 투자용 부동산은 제외되며, 이는 귀하의 CRE 전략 대부분을 배제합니다. 2014년 이후 규정에 따라 적격 비차용 배우자는 상환 의무 발생을 유예할 수 있으나 자금을 수령하지 못하며, PLF는 차용·비차용 배우자 중 최연소자를 기준으로 설정됩니다. HUD 승인 상담은 신청에 앞선 필수 관문으로, 정방향 대출에는 대응물이 없는 소비자 보호 절차입니다.',
+          en: 'The youngest borrower must be 62+ (the age drives the PLF, as a proxy for expected loan duration; a younger spouse may qualify as an eligible non-borrowing spouse rather than a borrower). The subject must be the principal residence — second homes and pure investment properties are out, which removes most of your CRE playbook. Eligible non-borrowing spouses can defer due-and-payable status under post-2014 rules, but they do not receive proceeds and the PLF is set off the youngest of the borrowing/non-borrowing pair. HUD-approved counseling is a hard gate ahead of application — a consumer-protection step with no analogue in forward origination.',
+          ko: '최연소 차주는 만 62세 이상이어야 합니다(나이는 기대 대출 기간의 대리변수로서 PLF를 결정하며, 더 젊은 배우자는 차주가 아니라 적격 비차용 배우자가 될 수 있습니다). 대상 주택은 주 거주지여야 합니다. 별장이나 순수 투자용 부동산은 제외되며, 이는 귀하의 CRE 전략 대부분을 배제합니다. 2014년 이후 규정에 따라 적격 비차용 배우자는 상환 의무 발생을 유예할 수 있으나 자금을 수령하지 못하며, PLF는 차용·비차용 배우자 중 최연소자를 기준으로 설정됩니다. HUD 승인 상담은 신청에 앞선 필수 관문으로, 정방향 대출에는 대응물이 없는 소비자 보호 절차입니다.',
         },
       ],
     },
@@ -45,8 +45,8 @@ export default {
       ko: '서비서는 MCA의 98%에서 HUD에 양도하여 테일 리스크를 FHA로 이전할 수 있습니다.',
     },
     {
-      en: 'Gate: youngest titleholder 62+, principal residence only, mandatory counseling, FHA property standards.',
-      ko: '요건: 최연소 명의자 62세 이상, 주 거주지 한정, 의무 상담, FHA 주택 기준.',
+      en: 'Gate: youngest borrower 62+, principal residence only, mandatory counseling, FHA property standards.',
+      ko: '요건: 최연소 차주 62세 이상, 주 거주지 한정, 의무 상담, FHA 주택 기준.',
     },
   ],
 }

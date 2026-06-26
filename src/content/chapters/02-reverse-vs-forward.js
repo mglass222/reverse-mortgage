@@ -20,8 +20,8 @@ export default {
       heading: { en: 'The rate stack: expected rate vs. note rate', ko: '금리 구조: 예상금리 vs. 노트금리' },
       body: [
         {
-          en: 'Forward pricing gives you one rate that both sizes the payment and accrues the balance. HECM splits them. The expected rate (10-Year CMT or SOFR swap + margin, subject to a floor) is a sizing rate used only to look up the Principal Limit Factor — it is the discount rate in the actuarial draw calculation. The note rate (index + margin, reset monthly or annually on an ARM) is what actually accrues. A higher expected rate shrinks the PLF and the up-front capacity even though it never touches a payment.',
-          ko: '정방향 가격은 하나의 금리로 상환액 산정과 잔액 누적을 모두 처리합니다. HECM은 이를 분리합니다. 예상금리(10년 만기 CMT 또는 SOFR 스왑 + 마진, 하한 적용)는 원금한도 계수(PLF)를 조회하는 데에만 쓰이는 산정 금리로, 보험계리적 인출 계산의 할인율입니다. 노트금리(지수 + 마진, ARM에서 월별 또는 연별 재설정)가 실제로 누적되는 금리입니다. 예상금리가 높을수록 상환액에는 영향이 없어도 PLF와 초기 가용액이 줄어듭니다.',
+          en: 'Forward pricing gives you one rate that both sizes the payment and accrues the balance. HECM splits them. The expected rate (10-Year CMT, or a SOFR swap rate for SOFR-indexed loans, + margin, subject to a floor) is a sizing rate used only to look up the Principal Limit Factor — it is the discount rate in the actuarial draw calculation. The note rate (index + margin, reset monthly or annually on an ARM) is what actually accrues. A higher expected rate shrinks the PLF and the up-front capacity even though it never touches a payment.',
+          ko: '정방향 가격은 하나의 금리로 상환액 산정과 잔액 누적을 모두 처리합니다. HECM은 이를 분리합니다. 예상금리(10년 만기 CMT, 또는 SOFR 지수 상품의 경우 SOFR 스왑 금리 + 마진, 하한 적용)는 원금한도 계수(PLF)를 조회하는 데에만 쓰이는 산정 금리로, 보험계리적 인출 계산의 할인율입니다. 노트금리(지수 + 마진, ARM에서 월별 또는 연별 재설정)가 실제로 누적되는 금리입니다. 예상금리가 높을수록 상환액에는 영향이 없어도 PLF와 초기 가용액이 줄어듭니다.',
         },
       ],
     },

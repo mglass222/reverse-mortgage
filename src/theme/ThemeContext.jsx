@@ -9,9 +9,13 @@ function readInitialTheme() {
   if (typeof document !== 'undefined' && document.documentElement.dataset.theme) {
     return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'
   }
-  if (typeof localStorage !== 'undefined') {
-    const stored = localStorage.getItem(STORAGE_KEY)
-    if (stored === 'dark' || stored === 'light') return stored
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const stored = localStorage.getItem(STORAGE_KEY)
+      if (stored === 'dark' || stored === 'light') return stored
+    }
+  } catch {
+    /* ignore storage failures */
   }
   if (typeof window !== 'undefined' && window.matchMedia) {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'

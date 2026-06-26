@@ -4,9 +4,15 @@ const STORAGE_KEY = 'rm-lang'
 const LanguageContext = createContext(null)
 
 function readInitialLang() {
-  if (typeof localStorage === 'undefined') return 'en'
-  const stored = localStorage.getItem(STORAGE_KEY)
-  return stored === 'ko' || stored === 'en' ? stored : 'en'
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const stored = localStorage.getItem(STORAGE_KEY)
+      if (stored === 'ko' || stored === 'en') return stored
+    }
+  } catch {
+    /* ignore storage failures */
+  }
+  return 'en'
 }
 
 export function LanguageProvider({ children }) {
