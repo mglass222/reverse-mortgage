@@ -21,7 +21,7 @@ export default {
       body: [
         {
           en: 'The hazards are real: equity erodes through compounding, costs are front-loaded, and a property-charge lapse can drive a default-based foreclosure despite "no payments." Proceeds can disqualify the borrower from means-tested benefits — [SSI and Medicaid](https://www.ssa.gov/ssi/text-resources-ussi.htm) spend-down are the usual traps, since lump-sum cash retained past month-end counts as a resource; Social Security retirement and Medicare are entitlements and are not affected. And the estate consequence is direct: a larger ending balance is a smaller inheritance. For short expected tenure (a likely move within a few years), the front-loaded IMIP and costs rarely amortize into value.',
-          ko: '위험은 실재합니다. 복리로 자본이 잠식되고, 비용이 앞당겨지며, 재산 부담금 누락은 "상환이 없는데도" 불이행 기반 압류를 초래할 수 있습니다. 수령액이 소득 기반 복지 자격을 박탈할 수 있습니다. [SSI와 메디케이드](https://www.ssa.gov/ssi/text-resources-ussi.htm) 자산소진(spend-down)이 흔한 함정인데, 월말을 넘겨 보유한 일시금 현금이 자산으로 계산되기 때문입니다. 다만 사회보장 노령연금과 메디케어는 수급권(entitlement)이므로 영향을 받지 않습니다. 상속 영향도 직접적입니다. 종료 잔액이 클수록 상속분이 줄어듭니다. 기대 거주기간이 짧으면(수년 내 이주 가능성), 앞당겨진 IMIP와 비용이 가치로 회수되는 경우가 드뭅니다.',
+          ko: '위험은 실재합니다. 복리로 자본이 잠식되고, 비용이 앞당겨지며, 재산 부담금 누락은 "상환이 없는데도" 불이행 기반 압류를 초래할 수 있습니다. 수령액이 소득·자산 조사 기반(means-tested) 복지 자격을 박탈할 수 있습니다. [SSI와 메디케이드](https://www.ssa.gov/ssi/text-resources-ussi.htm) 자산소진(spend-down)이 흔한 함정인데, 월말을 넘겨 보유한 일시금 현금이 자산으로 계산되기 때문입니다. 다만 사회보장 노령연금과 메디케어는 수급권(entitlement)이므로 영향을 받지 않습니다. 상속 영향도 직접적입니다. 종료 잔액이 클수록 상속분이 줄어듭니다. 기대 거주기간이 짧으면(수년 내 이주 가능성), 앞당겨진 IMIP와 비용이 가치로 회수되는 경우가 드뭅니다.',
         },
       ],
     },

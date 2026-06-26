@@ -22,7 +22,7 @@ export default {
       body: [
         {
           en: 'At payoff, the obligation is capped at the lesser of the balance or net sale proceeds — by statute, not by a negotiated carve-out. The borrower and heirs are never personally liable for a deficiency; the FHA insurance fund makes the lender whole. This is a genuine put option written by FHA and paid for by MIP. When a client frames the rising balance as "the bank taking the house," correct it precisely: the bank’s recovery is capped at value, and the taxpayer-backed fund — not the estate — absorbs the tail.',
-          ko: '상환 시점에 채무는 잔액과 순매각대금 중 낮은 금액으로 제한됩니다. 협상된 예외가 아니라 법령에 의해서입니다. 차주와 상속인은 부족분에 대해 개인적으로 책임지지 않으며, FHA 보험기금이 대출기관을 보전합니다. 이는 FHA가 발행하고 MIP로 대가를 치른 진정한 풋옵션입니다. 고객이 늘어나는 잔액을 "은행이 집을 가져가는 것"으로 표현하면 정확히 바로잡으십시오. 은행의 회수는 가치로 제한되며, 후순위는 상속재산이 아니라 납세자가 뒷받침하는 기금이 흡수합니다.',
+          ko: '상환 시점에 채무는 잔액과 순매각대금 중 낮은 금액으로 제한됩니다. 협상된 예외가 아니라 법령에 의해서입니다. 차주와 상속인은 부족분에 대해 개인적으로 책임지지 않으며, FHA 보험기금이 대출기관을 보전합니다. 이는 FHA가 발행하고 MIP로 대가를 치른 진정한 풋옵션입니다. 고객이 늘어나는 잔액을 "은행이 집을 가져가는 것"으로 표현하면 정확히 바로잡으십시오. 은행의 회수는 가치로 제한되며, 테일 리스크(꼬리 위험)는 상속재산이 아니라 납세자가 뒷받침하는 기금이 흡수합니다.',
         },
       ],
     },

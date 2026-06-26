@@ -17,7 +17,7 @@ const ui = {
     heading: { en: 'HECM Reverse Mortgage Estimator', ko: 'HECM 역모기지 추정 계산기' },
     age: { en: 'Youngest borrower age', ko: '최연소 차용인 나이' },
     homeValue: { en: 'Home appraised value', ko: '주택 감정가' },
-    existingLiens: { en: 'Existing mortgage / liens', ko: '기존 모기지 / 선순위 채권' },
+    existingLiens: { en: 'Existing mortgage / liens', ko: '기존 모기지 / 선순위 담보권' },
     expectedRate: { en: 'Expected interest rate (incl. margin, %)', ko: '예상 이자율 (마진 포함, %)' },
     disbursement: { en: 'Disbursement option', ko: '지급 방식' },
     optionLump: { en: 'Lump sum', ko: '일시금' },

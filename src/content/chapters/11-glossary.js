@@ -11,7 +11,7 @@ export default {
       body: [
         {
           en: 'Home Equity Conversion Mortgage — FHA’s reverse mortgage under the National Housing Act, administered by HUD and securitized via Ginnie Mae HMBS. The dominant U.S. reverse product.',
-          ko: '주택자본전환모기지 — 전국주택법에 따른 FHA의 역모기지로, HUD가 관리하고 지니메 HMBS로 유동화됩니다. 미국의 지배적인 역모기지 상품입니다.',
+          ko: '주택자본전환모기지 — 전국주택법에 따른 FHA의 역모기지로, HUD가 관리하고 지니메이 HMBS로 유동화됩니다. 미국의 지배적인 역모기지 상품입니다.',
         },
       ],
     },
@@ -110,7 +110,7 @@ export default {
       body: [
         {
           en: 'Servicer election to assign the loan to HUD once the balance reaches 98% of MCA, transferring tail/crossover risk to FHA while the borrower’s terms continue unchanged.',
-          ko: '잔액이 MCA의 98%에 도달하면 서비서가 대출을 HUD에 양도하는 선택. 차주의 조건은 그대로 유지한 채 후순위·교차점 위험을 FHA로 이전합니다.',
+          ko: '잔액이 MCA의 98%에 도달하면 서비서가 대출을 HUD에 양도하는 선택. 차주의 조건은 그대로 유지한 채 테일·교차점(크로스오버) 위험을 FHA로 이전합니다.',
         },
       ],
     },

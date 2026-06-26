@@ -10,12 +10,12 @@ export default function ProgramFlowDiagram() {
     insurance: { en: 'FHA insurance', ko: 'FHA 보험' },
     nonrecourse: { en: '(non-recourse)', ko: '(비소구)' },
     loan: { en: 'HECM loan', ko: 'HECM 대출' },
-    hmbs: { en: 'Ginnie Mae HMBS', ko: '지니메 HMBS' },
+    hmbs: { en: 'Ginnie Mae HMBS', ko: '지니메이 HMBS' },
     mip: { en: 'MIP', ko: 'MIP' },
     pooled: { en: 'pooled', ko: '풀링' },
     aria: {
       en: 'Flow: borrower-paid MIP funds the MMI Fund and FHA insurance that backs the non-recourse guarantee; the HECM loan is pooled into Ginnie Mae HMBS.',
-      ko: '흐름: 차주가 낸 MIP가 MMI 기금과 비소구를 뒷받침하는 FHA 보험의 재원이 되고, HECM 대출은 지니메 HMBS로 풀링됩니다.',
+      ko: '흐름: 차주가 낸 MIP가 MMI 기금과 비소구를 뒷받침하는 FHA 보험의 재원이 되고, HECM 대출은 지니메이 HMBS로 풀링됩니다.',
     },
   }
   const Box = ({ x, y, w, lines }) => (

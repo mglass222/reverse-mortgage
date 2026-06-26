@@ -30,7 +30,7 @@ export default {
       body: [
         {
           en: 'The Principal Limit is gross. Net it down by mandatory obligations: any existing liens to be retired (the HECM must close in first position, so a payoff of the current mortgage is typically the largest), financed closing costs, up-front MIP, and any LESA set-aside. First-year draw limits also apply (generally 60% of the Principal Limit, or mandatory obligations plus 10%, whichever is greater). What remains is what the borrower can actually access — model it before you quote.',
-          ko: '원금한도는 총액입니다. 필수 의무로 차감하십시오. 상환할 기존 선순위 채권(HECM은 1순위로 마감되어야 하므로 현재 모기지 상환이 보통 가장 큼), 자금조달된 마감 비용, 선납 MIP, LESA 적립액입니다. 1차년도 인출 한도도 적용됩니다(일반적으로 원금한도의 60%, 또는 필수 의무 + 10% 중 큰 금액). 남는 금액이 차주가 실제로 받을 수 있는 액수입니다. 견적 전에 모델링하십시오.',
+          ko: '원금한도는 총액입니다. 필수 의무로 차감하십시오. 상환할 기존 담보권(HECM은 1순위로 마감되어야 하므로 현재 모기지 상환이 보통 가장 큼), 자금조달된 마감 비용, 선납 MIP, LESA 적립액입니다. 1차년도 인출 한도도 적용됩니다(일반적으로 원금한도의 60%, 또는 필수 의무 + 10% 중 큰 금액). 남는 금액이 차주가 실제로 받을 수 있는 액수입니다. 견적 전에 모델링하십시오.',
         },
       ],
     },

@@ -57,7 +57,7 @@ export default {
       body: [
         {
           en: 'Ginnie Mae (HMBS securitization): [https://www.ginniemae.gov/](https://www.ginniemae.gov/)',
-          ko: '지니메 (HMBS 유동화): [https://www.ginniemae.gov/](https://www.ginniemae.gov/)',
+          ko: '지니메이 (HMBS 유동화): [https://www.ginniemae.gov/](https://www.ginniemae.gov/)',
         },
         {
           en: 'Social Security — Understanding SSI, Resources: [https://www.ssa.gov/ssi/text-resources-ussi.htm](https://www.ssa.gov/ssi/text-resources-ussi.htm)',

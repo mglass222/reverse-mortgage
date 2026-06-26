@@ -21,7 +21,7 @@ export default {
       body: [
         {
           en: 'Tenure pays a level monthly amount for as long as the home is the principal residence — effectively a lifetime annuity collateralized by equity, with the FHA insurance bearing the longevity tail. Term front-loads a larger payment over a fixed horizon. Both convert the Principal Limit into predictable income and are useful when the planning objective is durable cash flow rather than a capital sum — for instance, bridging to a delayed Social Security claim.',
-          ko: '종신은 주택이 주 거주지인 동안 균등한 월액을 지급합니다. 사실상 자본으로 담보된 평생 연금이며, 장수 위험은 FHA 보험이 부담합니다. 기간제는 정해진 기간에 더 큰 지급액을 앞당겨 줍니다. 둘 다 원금한도를 예측 가능한 소득으로 전환하며, 계획 목표가 목돈이 아니라 지속적 현금흐름일 때 유용합니다. 예를 들어 사회보장연금 수령을 미루는 동안의 가교로 쓸 수 있습니다.',
+          ko: '종신은 주택이 주 거주지인 동안 균등한 월액을 지급합니다. 사실상 주택 자본으로 담보된 평생 연금이며, 장수 위험은 FHA 보험이 부담합니다. 기간제는 정해진 기간에 더 큰 지급액을 앞당겨 줍니다. 둘 다 원금한도를 예측 가능한 소득으로 전환하며, 계획 목표가 목돈이 아니라 지속적 현금흐름일 때 유용합니다. 예를 들어 사회보장연금 수령을 미루는 동안의 가교로 쓸 수 있습니다.',
         },
       ],
     },
@@ -42,7 +42,7 @@ export default {
     },
     {
       en: 'Tenure/term convert the Principal Limit into an equity-collateralized annuity, with FHA bearing longevity risk.',
-      ko: '종신·기간제는 원금한도를 자본 담보 연금으로 전환하며 장수 위험은 FHA가 부담합니다.',
+      ko: '종신·기간제는 원금한도를 주택 자본 담보 연금으로 전환하며 장수 위험은 FHA가 부담합니다.',
     },
     {
       en: 'The unused LOC grows at note rate + MIP — a compounding standby-liquidity strategy, unique to the HECM.',
