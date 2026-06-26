@@ -10,6 +10,7 @@ describe('diagram registry', () => {
         'balanceDirection',
         'balanceGrowth',
         'disbursementOptions',
+        'equityGap',
         'maturityPaths',
         'nonRecourse',
         'principalLimit',

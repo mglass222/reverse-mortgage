@@ -8,9 +8,11 @@ import RateStackDiagram from './RateStackDiagram.jsx'
 import ProgramFlowDiagram from './ProgramFlowDiagram.jsx'
 import MaturityPathsDiagram from './MaturityPathsDiagram.jsx'
 import SuitabilityDiagram from './SuitabilityDiagram.jsx'
+import EquityGapDiagram from './EquityGapDiagram.jsx'
 
 const diagrams = {
   balanceDirection: BalanceDirectionDiagram,
+  equityGap: EquityGapDiagram,
   disbursementOptions: DisbursementOptionsDiagram,
   balanceGrowth: BalanceGrowthChart,
   nonRecourse: NonRecourseDiagram,

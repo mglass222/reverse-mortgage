@@ -17,7 +17,7 @@ export default {
     },
     {
       heading: { en: 'Why the product exists', ko: '이 상품이 존재하는 이유' },
-      diagram: 'balanceDirection',
+      diagram: 'equityGap',
       body: [
         {
           en: 'The borrower profile is the mirror image of your typical CRE sponsor: high equity, thin or fixed cash flow, and a strong incentive to avoid disposition. Think of a 74-year-old with a free-and-clear $1.1M property in Hancock Park whose income is Social Security plus a modest pension. A cash-out refinance fails the ATR/QM residual-income test; a HELOC can be frozen or called and still demands amortizing payments. The HECM monetizes the equity without a repayment obligation and without forcing a sale — that is the niche it fills.',
