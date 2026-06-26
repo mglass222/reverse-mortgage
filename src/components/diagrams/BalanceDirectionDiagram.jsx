@@ -23,6 +23,16 @@ export default function BalanceDirectionDiagram() {
         <text x="150" y="150" fontSize="11" fill="#234b3e">{pick(labels.forward)}</text>
         <text x="150" y="60" fontSize="11" fill="#9c6a34">{pick(labels.reverse)}</text>
         <text x="150" y="190" fontSize="10" fill="#8a8170">{pick(labels.time)}</text>
+        <text
+          x="14"
+          y="95"
+          fontSize="10"
+          fill="#8a8170"
+          textAnchor="middle"
+          transform="rotate(-90 14 95)"
+        >
+          {pick(labels.balance)}
+        </text>
       </svg>
     </figure>
   )
