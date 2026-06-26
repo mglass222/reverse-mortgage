@@ -6,21 +6,21 @@ export default function RateStackDiagram() {
   const { pick } = useLanguage()
   const X0 = 128
   const rows = [
-    { label: { en: 'Index (SOFR/CMT)', ko: '지수 (SOFR/CMT)' }, segs: [{ w: 80, f: '#234b3e' }] },
-    { label: { en: '+ Margin', ko: '+ 마진' }, segs: [{ w: 80, f: '#234b3e' }, { w: 38, f: '#9c6a34' }] },
+    { label: { en: 'Index (SOFR/CMT)', ko: '지수 (SOFR/CMT)' }, segs: [{ w: 80, f: '#475569' }] },
+    { label: { en: '+ Margin', ko: '+ 마진' }, segs: [{ w: 80, f: '#475569' }, { w: 38, f: '#0ea372' }] },
     {
       label: { en: '= Note rate', ko: '= 노트금리' },
-      segs: [{ w: 118, f: '#7a5024' }],
+      segs: [{ w: 118, f: '#0a8a60' }],
       tag: { en: 'accrues the balance', ko: '잔액을 누적' },
     },
     {
       label: { en: '= Expected rate', ko: '= 예상금리' },
-      segs: [{ w: 118, f: '#234b3e' }],
+      segs: [{ w: 118, f: '#475569' }],
       tag: { en: 'sets the PLF', ko: 'PLF를 결정' },
     },
     {
       label: { en: '+ Annual MIP', ko: '+ 연간 MIP' },
-      segs: [{ w: 118, f: '#9c6a34' }, { w: 12, f: '#9c4326' }],
+      segs: [{ w: 118, f: '#0ea372' }, { w: 12, f: '#b9683a' }],
       tag: { en: '= effective accrual', ko: '= 실효 누적률' },
     },
   ]
@@ -39,14 +39,14 @@ export default function RateStackDiagram() {
           const end = X0 + r.segs.reduce((s, g) => s + g.w, 0)
           return (
             <g key={i}>
-              <text x="8" y={y + 12} fontSize="8.5" fill="#4f483c">{pick(r.label)}</text>
+              <text x="8" y={y + 12} fontSize="8.5" fill="#475569">{pick(r.label)}</text>
               {r.segs.map((g, k) => {
                 const seg = <rect key={k} x={x} y={y + 2} width={g.w} height="13" rx="2" fill={g.f} />
                 x += g.w
                 return seg
               })}
               {r.tag && (
-                <text x={end + 6} y={y + 12} fontSize="7.5" fontStyle="italic" fill="#8a8170">{pick(r.tag)}</text>
+                <text x={end + 6} y={y + 12} fontSize="7.5" fontStyle="italic" fill="#69727e">{pick(r.tag)}</text>
               )}
             </g>
           )

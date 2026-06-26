@@ -11,17 +11,17 @@ export default function PrincipalLimitWaterfall() {
   const w = (k) => (Math.abs(k) / FULL) * MAXW
 
   const rows = [
-    { label: { en: 'Home value', ko: '주택 가치' }, k: 500, value: '$500k', fill: '#cdbf9f' },
-    { label: { en: 'Max Claim Amount', ko: '최대 청구 금액' }, k: 500, value: '$500k', fill: '#b89a6a' },
+    { label: { en: 'Home value', ko: '주택 가치' }, k: 500, value: '$500k', fill: '#cbd5e1' },
+    { label: { en: 'Max Claim Amount', ko: '최대 청구 금액' }, k: 500, value: '$500k', fill: '#94a3b8' },
     {
       label: { en: 'Principal Limit', ko: '원금한도' },
       k: 229.5,
       value: '$229.5k',
-      fill: '#3c6a59',
+      fill: '#94a3b8',
       note: { en: '× PLF 45.9%', ko: '× PLF 45.9%' },
     },
-    { label: { en: '− Obligations', ko: '− 필수 의무' }, k: 69, value: '−$69k', fill: '#9c4326' },
-    { label: { en: 'Net available', ko: '순수령액' }, k: 160.5, value: '$160.5k', fill: '#9c6a34', emph: true },
+    { label: { en: '− Obligations', ko: '− 필수 의무' }, k: 69, value: '−$69k', fill: '#b9683a' },
+    { label: { en: 'Net available', ko: '순수령액' }, k: 160.5, value: '$160.5k', fill: '#0ea372', emph: true },
   ]
 
   const rowH = 24
@@ -34,22 +34,22 @@ export default function PrincipalLimitWaterfall() {
   return (
     <figure className="diagram">
       <svg viewBox="0 0 340 140" role="img" aria-label={pick(aria)}>
-        <line x1={X0} y1={top - 2} x2={X0} y2={top + rows.length * rowH - 6} stroke="#ddd0b6" />
+        <line x1={X0} y1={top - 2} x2={X0} y2={top + rows.length * rowH - 6} stroke="#d7dce3" />
         {rows.map((r, i) => {
           const y = top + i * rowH
           return (
             <g key={i}>
-              <text x="8" y={y + 12} fontSize="9" fill="#4f483c">{pick(r.label)}</text>
+              <text x="8" y={y + 12} fontSize="9" fill="#475569">{pick(r.label)}</text>
               <rect x={X0} y={y + 3} width={w(r.k)} height="13" rx="2" fill={r.fill} />
               {r.note && (
-                <text x={X0 + 5} y={y + 12} fontSize="7" fill="#fffdf7">{pick(r.note)}</text>
+                <text x={X0 + 5} y={y + 12} fontSize="7" fill="#ffffff">{pick(r.note)}</text>
               )}
               <text
                 x={X0 + w(r.k) + 5}
                 y={y + 13}
                 fontSize="8.5"
                 fontWeight={r.emph ? '700' : '400'}
-                fill={r.emph ? '#9c6a34' : '#1a1712'}
+                fill={r.emph ? '#0ea372' : '#0e1116'}
               >
                 {r.value}
               </text>

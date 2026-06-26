@@ -19,15 +19,15 @@ export default function MaturityPathsDiagram() {
       <svg viewBox="0 0 340 168" role="img" aria-label={pick(L.aria)}>
         <defs>
           <marker id="arr-mat" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto">
-            <path d="M0,0 L6,3 L0,6 Z" fill="#7a5024" />
+            <path d="M0,0 L6,3 L0,6 Z" fill="#0a8a60" />
           </marker>
         </defs>
         {/* left chain */}
-        <rect x={6} y={66} width={84} height="36" rx="6" fill="#e3d6bb" stroke="#9c6a34" />
-        <text x={48} y={88} fontSize="9" textAnchor="middle" fill="#1a1712">{pick(L.event)}</text>
-        <line x1={90} y1={84} x2={114} y2={84} stroke="#7a5024" markerEnd="url(#arr-mat)" />
-        <rect x={116} y={66} width={84} height="36" rx="6" fill="#9c4326" />
-        <text x={158} y={88} fontSize="9" textAnchor="middle" fill="#fffdf7">{pick(L.due)}</text>
+        <rect x={6} y={66} width={84} height="36" rx="6" fill="#e2e8f0" stroke="#0ea372" />
+        <text x={48} y={88} fontSize="9" textAnchor="middle" fill="#0e1116">{pick(L.event)}</text>
+        <line x1={90} y1={84} x2={114} y2={84} stroke="#0a8a60" markerEnd="url(#arr-mat)" />
+        <rect x={116} y={66} width={84} height="36" rx="6" fill="#b9683a" />
+        <text x={158} y={88} fontSize="9" textAnchor="middle" fill="#ffffff">{pick(L.due)}</text>
 
         {/* fork to three paths */}
         {[
@@ -36,9 +36,9 @@ export default function MaturityPathsDiagram() {
           { y: 114, label: pick(L.refi) },
         ].map((p, i) => (
           <g key={i}>
-            <line x1={200} y1={84} x2={234} y2={p.y + 18} stroke="#7a5024" markerEnd="url(#arr-mat)" />
-            <rect x={236} y={p.y} width={100} height="36" rx="6" fill="#f0e4cf" stroke="#3c6a59" />
-            <text x={286} y={p.y + 22} fontSize="8" textAnchor="middle" fill="#234b3e">{p.label}</text>
+            <line x1={200} y1={84} x2={234} y2={p.y + 18} stroke="#0a8a60" markerEnd="url(#arr-mat)" />
+            <rect x={236} y={p.y} width={100} height="36" rx="6" fill="#eef1f5" stroke="#94a3b8" />
+            <text x={286} y={p.y + 22} fontSize="8" textAnchor="middle" fill="#475569">{p.label}</text>
           </g>
         ))}
       </svg>

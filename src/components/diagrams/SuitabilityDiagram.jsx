@@ -20,13 +20,13 @@ export default function SuitabilityDiagram() {
   const Col = ({ x, head, color, mark, items }) => (
     <g>
       <rect x={x} y={10} width={156} height="26" rx="5" fill={color} />
-      <text x={x + 78} y={27} fontSize="11" fontWeight="700" textAnchor="middle" fill="#fffdf7">{head}</text>
+      <text x={x + 78} y={27} fontSize="11" fontWeight="700" textAnchor="middle" fill="#ffffff">{head}</text>
       {items.map((it, i) => {
         const y = 52 + i * 34
         return (
           <g key={i}>
             <text x={x + 10} y={y} fontSize="13" fill={color}>{mark}</text>
-            <text x={x + 26} y={y} fontSize="8.5" fill="#1a1712">{it}</text>
+            <text x={x + 26} y={y} fontSize="8.5" fill="#0e1116">{it}</text>
           </g>
         )
       })}
@@ -35,8 +35,8 @@ export default function SuitabilityDiagram() {
   return (
     <figure className="diagram">
       <svg viewBox="0 0 340 158" role="img" aria-label={pick(L.aria)}>
-        <Col x={6} head={pick(L.good)} color="#234b3e" mark="✓" items={[pick(L.g1), pick(L.g2), pick(L.g3)]} />
-        <Col x={178} head={pick(L.poor)} color="#9c4326" mark="✕" items={[pick(L.p1), pick(L.p2), pick(L.p3)]} />
+        <Col x={6} head={pick(L.good)} color="#0ea372" mark="✓" items={[pick(L.g1), pick(L.g2), pick(L.g3)]} />
+        <Col x={178} head={pick(L.poor)} color="#b9683a" mark="✕" items={[pick(L.p1), pick(L.p2), pick(L.p3)]} />
       </svg>
     </figure>
   )
