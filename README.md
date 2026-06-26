@@ -28,22 +28,31 @@ The live site is deployed to GitHub Pages automatically on every push to `main`
 ## Tech stack
 
 - **React 18** + **Vite 5** single-page app (deploys as static files anywhere)
-- **react-router-dom 6** for chapter routing
+- **react-router-dom 6** (HashRouter, so deep links work on the GitHub Pages subpath)
 - **Vitest** + **@testing-library/react** + **jsdom** for unit/component tests
-- Plain CSS (no UI framework); Google Fonts: Fraunces, Hanken Grotesk, Noto Serif/Sans KR
+- Plain CSS (no UI framework) in a modern, sleek theme; Google Fonts:
+  Sora (display), Hanken Grotesk (body), IBM Plex Mono (labels/figures), Noto Sans KR
 
 ## Features
 
-- **11 chaptered lessons** + a glossary, each rendered from a shared bilingual
-  data model so prose stays separate from presentation.
+- **12 routes**: 11 chaptered lessons, a glossary, and a "Sources & Further
+  Reading" references chapter — each rendered from a shared bilingual data model
+  so prose stays separate from presentation. A "next chapter" link and
+  scroll-to-top tie the sequence together.
 - **Instant English/Korean toggle** persisted to `localStorage`; every UI string,
-  chapter, and SVG diagram label is stored as `{ en, ko }`.
-- **Five custom SVG diagrams** (drawn in code, fully translatable) covering the
-  reverse-vs-forward balance direction, disbursement options, balance growth,
-  non-recourse/crossover, and the origination flow.
+  chapter, and SVG diagram label is stored as `{ en, ko }`. The Korean was
+  accuracy-checked via Google Translate back-translation plus expert review.
+- **Custom SVG diagrams** (one per chapter, drawn in code and fully translatable):
+  equity gap, reverse-vs-forward balance curves, the program/insurance flow, the
+  Principal Limit waterfall, disbursement options, the rate stack, balance growth,
+  non-recourse/crossover, maturity-resolution paths, the origination flow, and a
+  suitability comparison.
+- **Inline source citations** in the prose plus a full-URL references chapter
+  (HUD, eCFR, CFPB, Ginnie Mae, SSA/Medicaid).
 - **Live HECM calculator** — Maximum Claim Amount, Principal Limit (PLF lookup),
   MIP, capped origination fee, mandatory obligations, net availability, and a
   disbursement illustration (lump sum / tenure / term / line of credit).
+- **Responsive** with a collapsible mobile chapter menu, and an SVG favicon.
 
 ## Getting started
 
@@ -59,8 +68,8 @@ npm run preview  # preview the production build
 
 ```text
 src/
-  main.jsx, App.jsx              # entry + layout shell and routing
-  styles/global.css              # editorial "private-bank broadsheet" theme
+  main.jsx, App.jsx              # entry + layout shell, routing, scroll-to-top
+  styles/global.css              # modern, sleek theme (Sora / Hanken Grotesk / IBM Plex Mono)
   i18n/
     LanguageContext.jsx          # lang state, localStorage, pick() helper
     ui-strings.js                # { en, ko } UI labels
@@ -74,10 +83,10 @@ src/
     Calculator.jsx               # live calculator UI
   content/
     chapters-index.js            # ordered chapter registry
-    chapters/01..11-*.js         # bilingual chapter content modules
+    chapters/01..12-*.js         # bilingual chapter content modules (incl. references)
   components/
     Sidebar, LanguageToggle, DisclaimerBanner, ChapterLayout, KeyTakeaways
-    diagrams/                    # 5 SVG diagram components + registry
+    diagrams/                    # SVG diagram components + registry
 ```
 
 Tests are colocated with their source as `*.test.js` / `*.test.jsx`.
@@ -93,8 +102,8 @@ These are the files to update as the program and content evolve:
 | Chapter content (EN/KO) | `src/content/chapters/` |
 | UI strings (EN/KO) | `src/i18n/ui-strings.js` |
 
-FHA constants and the PLF table are **dated** (currently 2025) — they must be
-refreshed when FHA revises them.
+FHA constants and the PLF table are **dated** (currently 2026 — e.g., the
+$1,249,125 lending limit) — they must be refreshed when FHA revises them.
 
 ## Design docs
 
