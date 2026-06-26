@@ -3,9 +3,11 @@
 import { useEffect } from 'react'
 import { HashRouter, Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom'
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext.jsx'
+import { ThemeProvider } from './theme/ThemeContext.jsx'
 import ui from './i18n/ui-strings.js'
 import Sidebar from './components/Sidebar.jsx'
 import LanguageToggle from './components/LanguageToggle.jsx'
+import ThemeToggle from './components/ThemeToggle.jsx'
 import DisclaimerBanner from './components/DisclaimerBanner.jsx'
 import ChapterLayout from './components/ChapterLayout.jsx'
 import Calculator from './calculator/Calculator.jsx'
@@ -26,7 +28,10 @@ function Header() {
   return (
     <header className="app-header">
       <span className="app-title">{pick(ui.siteTitle)}</span>
-      <LanguageToggle />
+      <div className="app-actions">
+        <ThemeToggle />
+        <LanguageToggle />
+      </div>
     </header>
   )
 }
@@ -47,6 +52,7 @@ function ChapterRoute() {
 
 export default function App() {
   return (
+    <ThemeProvider>
     <LanguageProvider>
       <HashRouter>
         <ScrollToTop />
@@ -65,5 +71,6 @@ export default function App() {
         </div>
       </HashRouter>
     </LanguageProvider>
+    </ThemeProvider>
   )
 }

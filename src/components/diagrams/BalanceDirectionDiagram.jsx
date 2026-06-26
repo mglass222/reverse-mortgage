@@ -16,20 +16,20 @@ export default function BalanceDirectionDiagram() {
   return (
     <figure className="diagram">
       <svg viewBox="0 0 320 200" role="img" aria-label={pick(labels.aria)}>
-        <line x1="40" y1="170" x2="300" y2="170" stroke="#cbd5e1" />
-        <line x1="40" y1="20" x2="40" y2="170" stroke="#cbd5e1" />
+        <line x1="40" y1="170" x2="300" y2="170" stroke="var(--dg-fill2)" />
+        <line x1="40" y1="20" x2="40" y2="170" stroke="var(--dg-fill2)" />
         {/* Forward: amortizing decline — gentle early, steeper late */}
-        <path d="M40,42 C160,55 250,130 300,162" fill="none" stroke="#475569" strokeWidth="3" />
+        <path d="M40,42 C160,55 250,130 300,162" fill="none" stroke="var(--dg-slate)" strokeWidth="3" />
         {/* Reverse: compounding rise — slow early, accelerating */}
-        <path d="M40,162 C160,150 250,75 300,42" fill="none" stroke="#0ea372" strokeWidth="3" />
-        <text x="46" y="34" fontSize="11" fill="#475569" textAnchor="start">{pick(labels.forward)}</text>
-        <text x="294" y="34" fontSize="11" fill="#0ea372" textAnchor="end">{pick(labels.reverse)}</text>
-        <text x="150" y="190" fontSize="10" fill="#69727e">{pick(labels.time)}</text>
+        <path d="M40,162 C160,150 250,75 300,42" fill="none" stroke="var(--dg-accent)" strokeWidth="3" />
+        <text x="46" y="34" fontSize="11" fill="var(--dg-slate)" textAnchor="start">{pick(labels.forward)}</text>
+        <text x="294" y="34" fontSize="11" fill="var(--dg-accent)" textAnchor="end">{pick(labels.reverse)}</text>
+        <text x="150" y="190" fontSize="10" fill="var(--dg-muted)">{pick(labels.time)}</text>
         <text
           x="28"
           y="95"
           fontSize="10"
-          fill="#69727e"
+          fill="var(--dg-muted)"
           textAnchor="middle"
           transform="rotate(-90 28 95)"
         >

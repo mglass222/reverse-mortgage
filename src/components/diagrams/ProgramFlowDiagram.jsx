@@ -20,7 +20,7 @@ export default function ProgramFlowDiagram() {
   }
   const Box = ({ x, y, w, lines }) => (
     <g>
-      <rect x={x} y={y} width={w} height="36" rx="6" fill="#eef1f5" stroke="#0ea372" />
+      <rect x={x} y={y} width={w} height="36" rx="6" fill="var(--dg-fill)" stroke="var(--dg-accent)" />
       {lines.map((ln, i) => (
         <text
           key={i}
@@ -28,7 +28,7 @@ export default function ProgramFlowDiagram() {
           y={y + (lines.length === 1 ? 22 : 16 + i * 12)}
           fontSize="9"
           textAnchor="middle"
-          fill="#0e1116"
+          fill="var(--dg-ink)"
         >
           {ln}
         </text>
@@ -40,22 +40,22 @@ export default function ProgramFlowDiagram() {
       <svg viewBox="0 0 340 140" role="img" aria-label={pick(L.aria)}>
         <defs>
           <marker id="arr-prog" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto">
-            <path d="M0,0 L6,3 L0,6 Z" fill="#0a8a60" />
+            <path d="M0,0 L6,3 L0,6 Z" fill="var(--dg-accent2)" />
           </marker>
         </defs>
         {/* Row 1: insurance side */}
         <Box x={8} y={20} w={78} lines={[pick(L.borrower)]} />
         <Box x={130} y={20} w={78} lines={[pick(L.fund)]} />
         <Box x={252} y={20} w={80} lines={[pick(L.insurance), pick(L.nonrecourse)]} />
-        <line x1={86} y1={38} x2={128} y2={38} stroke="#0a8a60" markerEnd="url(#arr-prog)" />
-        <text x={107} y={32} fontSize="7.5" textAnchor="middle" fill="#69727e">{pick(L.mip)}</text>
-        <line x1={208} y1={38} x2={250} y2={38} stroke="#0a8a60" markerEnd="url(#arr-prog)" />
+        <line x1={86} y1={38} x2={128} y2={38} stroke="var(--dg-accent2)" markerEnd="url(#arr-prog)" />
+        <text x={107} y={32} fontSize="7.5" textAnchor="middle" fill="var(--dg-muted)">{pick(L.mip)}</text>
+        <line x1={208} y1={38} x2={250} y2={38} stroke="var(--dg-accent2)" markerEnd="url(#arr-prog)" />
 
         {/* Row 2: securitization side */}
         <Box x={8} y={88} w={78} lines={[pick(L.loan)]} />
         <Box x={150} y={88} w={120} lines={[pick(L.hmbs)]} />
-        <line x1={86} y1={106} x2={148} y2={106} stroke="#0a8a60" markerEnd="url(#arr-prog)" />
-        <text x={117} y={100} fontSize="7.5" textAnchor="middle" fill="#69727e">{pick(L.pooled)}</text>
+        <line x1={86} y1={106} x2={148} y2={106} stroke="var(--dg-accent2)" markerEnd="url(#arr-prog)" />
+        <text x={117} y={100} fontSize="7.5" textAnchor="middle" fill="var(--dg-muted)">{pick(L.pooled)}</text>
       </svg>
     </figure>
   )

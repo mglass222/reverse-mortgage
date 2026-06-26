@@ -7,6 +7,7 @@ const ui = {
   },
   toggle: { en: '한국어', ko: 'English' },
   toggleAria: { en: 'Switch language', ko: '언어 전환' },
+  themeToggle: { en: 'Toggle dark mode', ko: '다크 모드 전환' },
   chapterNotFound: { en: 'Chapter not found.', ko: '챕터를 찾을 수 없습니다.' },
   emptyHome: { en: 'No chapters yet.', ko: '아직 챕터가 없습니다.' },
   disclaimer: {

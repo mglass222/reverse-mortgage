@@ -52,6 +52,9 @@ The live site is deployed to GitHub Pages automatically on every push to `main`
 - **Live HECM calculator** — Maximum Claim Amount, Principal Limit (PLF lookup),
   MIP, capped origination fee, mandatory obligations, net availability, and a
   disbursement illustration (lump sum / tenure / term / line of credit).
+- **Light & dark themes** via a header toggle — defaults to the OS preference,
+  persists to `localStorage`, applies before paint (no flash), and the SVG
+  diagrams adapt via CSS variables.
 - **Responsive** with a collapsible mobile chapter menu, and an SVG favicon.
 
 ## Getting started

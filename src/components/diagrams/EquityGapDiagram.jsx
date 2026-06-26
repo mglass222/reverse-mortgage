@@ -19,27 +19,27 @@ export default function EquityGapDiagram() {
       <svg viewBox="0 0 340 176" role="img" aria-label={pick(L.aria)}>
         <defs>
           <marker id="arr-eq" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto">
-            <path d="M0,0 L6,3 L0,6 Z" fill="#0ea372" />
+            <path d="M0,0 L6,3 L0,6 Z" fill="var(--dg-accent)" />
           </marker>
         </defs>
-        <text x="170" y="16" fontSize="11" fontWeight="700" textAnchor="middle" fill="#0e1116">
+        <text x="170" y="16" fontSize="11" fontWeight="700" textAnchor="middle" fill="var(--dg-ink)">
           {pick(L.caption)}
         </text>
-        <line x1="34" y1="152" x2="306" y2="152" stroke="#d7dce3" />
+        <line x1="34" y1="152" x2="306" y2="152" stroke="var(--dg-line)" />
 
         {/* Home equity — tall */}
-        <rect x="72" y="48" width="60" height="104" rx="2" fill="#475569" />
-        <text x="102" y="42" fontSize="8.5" textAnchor="middle" fill="#475569">≈ $1.1M</text>
-        <text x="102" y="167" fontSize="9" textAnchor="middle" fill="#475569">{pick(L.equity)}</text>
+        <rect x="72" y="48" width="60" height="104" rx="2" fill="var(--dg-slate)" />
+        <text x="102" y="42" fontSize="8.5" textAnchor="middle" fill="var(--dg-slate)">≈ $1.1M</text>
+        <text x="102" y="167" fontSize="9" textAnchor="middle" fill="var(--dg-slate)">{pick(L.equity)}</text>
 
         {/* Income / cash — small */}
-        <rect x="208" y="128" width="60" height="24" rx="2" fill="#0ea372" />
-        <text x="273" y="144" fontSize="8.5" textAnchor="start" fill="#0ea372">≈ $30k/yr</text>
-        <text x="238" y="167" fontSize="9" textAnchor="middle" fill="#475569">{pick(L.cash)}</text>
+        <rect x="208" y="128" width="60" height="24" rx="2" fill="var(--dg-accent)" />
+        <text x="273" y="144" fontSize="8.5" textAnchor="start" fill="var(--dg-accent)">≈ $30k/yr</text>
+        <text x="238" y="167" fontSize="9" textAnchor="middle" fill="var(--dg-slate)">{pick(L.cash)}</text>
 
         {/* HECM converts equity into cash */}
-        <path d="M118 56 Q184 30 238 126" fill="none" stroke="#0ea372" strokeWidth="2" markerEnd="url(#arr-eq)" />
-        <text x="182" y="44" fontSize="8" textAnchor="middle" fill="#0ea372">{pick(L.hecm)}</text>
+        <path d="M118 56 Q184 30 238 126" fill="none" stroke="var(--dg-accent)" strokeWidth="2" markerEnd="url(#arr-eq)" />
+        <text x="182" y="44" fontSize="8" textAnchor="middle" fill="var(--dg-accent)">{pick(L.hecm)}</text>
       </svg>
     </figure>
   )
