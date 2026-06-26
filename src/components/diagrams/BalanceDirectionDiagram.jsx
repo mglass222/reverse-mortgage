@@ -9,8 +9,8 @@ export default function BalanceDirectionDiagram() {
     time: { en: 'Time', ko: '시간' },
     balance: { en: 'Loan balance', ko: '대출 잔액' },
     aria: {
-      en: 'Chart: a forward-mortgage balance falls toward zero over time while a reverse-mortgage balance rises over time.',
-      ko: '차트: 시간이 지남에 따라 정모기지 잔액은 0을 향해 줄고 역모기지 잔액은 늘어납니다.',
+      en: 'Chart: a forward-mortgage balance declines along an amortizing curve (slowly at first, then faster) while a reverse-mortgage balance compounds upward over time.',
+      ko: '차트: 정모기지 잔액은 상각 곡선을 따라(처음에는 천천히, 이후 더 빠르게) 감소하고, 역모기지 잔액은 시간이 지나며 복리로 증가합니다.',
     },
   }
   return (
@@ -18,10 +18,12 @@ export default function BalanceDirectionDiagram() {
       <svg viewBox="0 0 320 200" role="img" aria-label={pick(labels.aria)}>
         <line x1="40" y1="170" x2="300" y2="170" stroke="#bcae92" />
         <line x1="40" y1="20" x2="40" y2="170" stroke="#bcae92" />
-        <polyline points="40,40 300,160" fill="none" stroke="#234b3e" strokeWidth="3" />
-        <polyline points="40,160 300,40" fill="none" stroke="#9c6a34" strokeWidth="3" />
-        <text x="150" y="150" fontSize="11" fill="#234b3e">{pick(labels.forward)}</text>
-        <text x="150" y="60" fontSize="11" fill="#9c6a34">{pick(labels.reverse)}</text>
+        {/* Forward: amortizing decline — gentle early, steeper late */}
+        <path d="M40,42 C160,55 250,130 300,162" fill="none" stroke="#234b3e" strokeWidth="3" />
+        {/* Reverse: compounding rise — slow early, accelerating */}
+        <path d="M40,162 C160,150 250,75 300,42" fill="none" stroke="#9c6a34" strokeWidth="3" />
+        <text x="46" y="34" fontSize="11" fill="#234b3e" textAnchor="start">{pick(labels.forward)}</text>
+        <text x="294" y="34" fontSize="11" fill="#9c6a34" textAnchor="end">{pick(labels.reverse)}</text>
         <text x="150" y="190" fontSize="10" fill="#8a8170">{pick(labels.time)}</text>
         <text
           x="28"
